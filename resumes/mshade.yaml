@@ -74,7 +74,7 @@ work:
         role: Devops Engineer
         website: https://fool.com
         date: June 2018 - Present
-        summary: Making the world Smarter, Happier, and Richer
+        summary: Helping make the world smarter, happier, and richer
         highlights:
           - Develop and support CI/CD processes for deployment of Python and .NET Core Apps
           - Manage, develop, and support Kubernetes / Docker / Linux / .NET hosting infrastructure
