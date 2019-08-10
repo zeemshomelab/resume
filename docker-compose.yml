@@ -1,0 +1,6 @@
+version: '3'
+services:
+  mshade-resume:
+    image: mshade/resume:latest
+    ports:
+      - "8080:80"
