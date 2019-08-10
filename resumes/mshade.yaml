@@ -80,9 +80,7 @@ work:
           - Manage, develop, and support Kubernetes / Docker / Linux / .NET hosting infrastructure
           - Containerize existing and automate creation of new projects
           - Help our developers work smarter, faster, and more effectively
-          - >
-              Manage our customer facing web infrastructure from edge to edge to help Fools all over the world become
-              Smarter, Happier, and Richer.
+          - Manage our customer facing web infrastructure from edge to edge to provide content to Fools all over the world
     -   company: Forum One
         role: Sr. System Administrator
         website: https://forumone.com
