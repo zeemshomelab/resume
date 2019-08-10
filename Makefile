@@ -7,8 +7,8 @@ RSYNC_LOCATION ?= example.com:/var/www/resume/
 
 PYTHON ?= $(shell which python3)
 RSYNC ?= $(shell which rsync)
-RSYNC_ARGS ?= aAXv
-BUILD_DIR ?= build
+RSYNC_ARGS ?= av
+BUILD_DIR ?= build/
 BUILD_ARGS ?= --output_dir $(BUILD_DIR)
 BUILD ?= $(PYTHON) build.py $(BUILD_ARGS)
 

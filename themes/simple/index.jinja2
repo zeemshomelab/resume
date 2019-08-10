@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117255854-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117255854-1');
+  </script>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,8 +102,10 @@
                 <dt>Address:</dt>
                 <dd>{{ profile.address }}</dd>
 
+                {% if profile.phone %}
                 <dt>Phone:</dt>
                 <dd>{{ profile.phone }}</dd>
+                {% endif %}
 
                 <dt>Email:</dt>
                 <dd>
@@ -134,28 +147,6 @@
             <h3></h3> {{ h.md(profile.summary) }}
           </div>
         </section>
-        {% endif %} {% if skills %}
-        <section class="row skills">
-          <header class="col-md-3">
-            <h3>Skills</h3>
-          </header>
-          <div class="col-md-9">
-            <div class="row skills">
-
-              {% for area in skills %}
-              <div class="col-md-6">
-                <h4>{{ area.area }}</h4>
-                <ul>
-                  {% for skill in area.skills %}
-                  <li>{{ skill }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              {% endfor %}
-
-            </div>
-          </div>
-        </section>
         {% endif %} {% if work %}
         <section class="row">
           <header class="col-md-3">
@@ -187,7 +178,7 @@
         {% endif %} {% if projects %}
         <section class="row">
           <header class="col-md-3">
-            <h3>{{ labels.projects or 'Projects' }}</h3>
+            <h3>{{ labels.projects or 'Notable Projects' }}</h3>
           </header>
           <div class="col-md-9">
             {% for project in projects %}
@@ -212,6 +203,28 @@
               {% endif %}
             </div>
             {% endfor %}
+          </div>
+        </section>
+        {% endif %} {% if skills %}
+        <section class="row skills">
+          <header class="col-md-3">
+            <h3>Skills</h3>
+          </header>
+          <div class="col-md-9">
+            <div class="row skills">
+
+              {% for area in skills %}
+              <div class="col-md-6">
+                <h4>{{ area.area }}</h4>
+                <ul>
+                  {% for skill in area.skills %}
+                  <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endfor %}
+
+            </div>
           </div>
         </section>
         {% endif %} {% if education %}
@@ -250,12 +263,8 @@
         <div class="footer ">
           <p class="pull-right">
             &copy; {{ config.year }} {{ profile.name }} |
-            <a href="{{ config.pdf_file }}">Download PDF</a> |
-            <a href="#" onclick="javascript:window.print(); return false">Print</a> |
+            <a href="/mike_shade_resume.pdf">Download PDF</a> |
             <a href="#">Top</a>
-          </p>
-          <p>
-            Source on <a href="{{ config.github_source }}">github</a>
           </p>
         </div>
 
