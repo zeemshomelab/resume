@@ -1,7 +1,7 @@
 version: '3'
 services:
-  mshade-resume:
-    image: mshade/resume:latest
+  jpiel-resume:
+    image: jpiel/resume:latest
     restart: always
     ports:
       - "8080:80"
