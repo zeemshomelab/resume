@@ -1,0 +1,79 @@
+profile:
+    name: Erin Piel
+    label: Project Manager
+    email: eahowden@gmail.com
+    address: Westminster, CO
+    summary: >
+        Experienced Project Manager, Business Analyst, and Scrum Master with a passion for Agile and coaching teams.
+        Skilled in Microsoft Office, Scrum/Agile Techniques, and various Project Management tools. 
+
+    image: "https://i.imgur.com/Sc73zFB.jpg"
+    website: https://erin.piel.vip
+
+    networks:
+        - provider: ScrumAlliance
+          username: ehowden
+          url: https://www.scrumalliance.org/community/profile/ehowden
+        - provider: linkedin
+          username: erinhpiel
+          url: https://www.linkedin.com/in/erinhpiel
+            
+skills:
+    - area: Software Development Methodologies
+      skills:
+        - Agile
+        - Scrum
+        - Kanban
+        - XP
+    - area: Coaching
+      skills:
+        - Excellent Written and Verbal Communication
+        - Facilitation Techniques
+        - Root Cause Analysis
+    - area: Databases
+      skills:
+        - MySQL
+        - PostgreSQL
+    - area: Project Tracking Software
+      skills:
+        - Jira
+        - Confluence
+        - Redmine
+        - Pivotal Tracker
+
+work:
+    - company: TrueCoach
+      role: Project Manager
+      website: https://truecoach.co
+      date: Feb. 2019 - Present
+      summary: TrueCoach is on a mission to help coaches save time, deliver a better experience for their clients, and grow their training businesses.
+      highlights:
+        - Project Manager and Scrum Master for 3 development teams building our app for the web, mobile web, iOS, and Android
+        - Coach and mentor a cross-function team of 13 developers and designers to consistently deliver quality feature and to our app
+        - Facilitate Project Kickoff, Sprint Planning, Backlog Refinement, Retrospectives, and Daily Standups
+        - Remove team impediments on a daily basis to allow the team to deliver the sprint goals and product increments
+        - Collaborate with members of the Product, Business, and Engineering teams to develop and maintain Product Backlogs
+        - Interact daily with the Customer Success team to triage bugs
+        - Create Initiative Lifecycle process - ensuring clarity to our entire organization what our developers are working on and what they will work on next
+        - Lead traingins on Scrum, Agile, Facilitation and Coaching, and team dynamics
+
+education:
+    - location: University of Arizona, Tucson, AZ
+      date: 2008 - 2012
+      summary: Biology - Biomedical Studies
+    - location: Pima Community College, Tucson, AZ
+      date: 2013 - 2013
+      summary: EMT Basic Training Certification
+    - location: Prescott High School, Prescott, AZ
+      date: 2004-2008
+      summary: High School Diploma
+
+interests:
+    - Scrum and Agile
+    - Motorsports
+    - Performing Arts
+    - Hiking / Travel
+
+config:
+    theme: simple
+    pdf_file: Erin_Piel_Resume.pdf
