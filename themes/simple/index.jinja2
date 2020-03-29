@@ -251,13 +251,19 @@
           <p class="pull-right">
             &copy; {{ config.year }} {{ profile.name }} |
 	    <a href="/{{ config.pdf_file }}">Download PDF</a> |
+            <a href="#" onclick="javascript:window.print(); return false">Print</a> |
             <a href="#">Top</a>
+          </p>
+	   <p>
+            Source on <a href="{{ config.github_source }}">github</a>
           </p>
         </div>
 
       </div>
     </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </body>
 

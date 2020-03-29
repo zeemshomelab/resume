@@ -119,5 +119,6 @@ interests:
     - Hiking / Travel
 
 config:
+    year: 2020
     theme: simple
     pdf_file: Erin_Piel_Resume.pdf

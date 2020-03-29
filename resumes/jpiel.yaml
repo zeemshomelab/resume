@@ -133,6 +133,8 @@ interests:
     - Motorsports
 
 config:
+    year: 2020
     theme: simple
+    github_source: https://github.com/JBenPiel/resume
     pdf_file: Jordan_Piel_Resume.pdf
 

@@ -1,7 +1,7 @@
 version: '3'
 services:
   jpiel-resume:
-    image: jpiel/resume:latest
+    image: jpiel/jordan-resume:latest
     restart: always
     ports:
       - "8080:80"
