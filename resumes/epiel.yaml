@@ -56,6 +56,50 @@ work:
         - Interact daily with the Customer Success team to triage bugs
         - Create Initiative Lifecycle process - ensuring clarity to our entire organization what our developers are working on and what they will work on next
         - Lead traingins on Scrum, Agile, Facilitation and Coaching, and team dynamics
+    - company: University of Colorado Boulder - Office of Information Tecnology - Business Analysis and Solutions Architecture
+      role: IT Business Analyst 
+      website: https://www.oit.colorado.edu
+      date: Jul. 2018 - Feb. 2019
+      highlights:
+        - New Student and Family Program online orientation transition to new online learning management system Canvas from D2L;
+        - Drafted functional specifications for enrollment, un-enrollment, and grade export
+        - Modeled current D2L process and future Canvas processes, highlighting changes when applicable
+        - Led efforts to resolve enrollment issues by communicating and coordinating with multiple departments
+        - Medical Services 3rd Party Insurance - project to accept five major insurance providers at the campus health clinic
+        - Ran weekly status meetings, reviewed progress, assisted with issues
+        - Analyzed list of 24,000+ student responses on their current insurance providers; utilizing excel tools such as pivot tables to recommend which five insurance companies would be most appropriate to partner with
+        - Met with various employees to model current processes, discussed implications of accepting new insurance carriers and how that would affect workloads and define future workflows
+    - company: University of Arizona - Financial Services Office - Initiatives and Outreach Team
+      role: Business Analyst
+      website: https://www.fso.arizona.edu
+      date: Jun. 2016 - May 2018
+      highlights:
+        - RenewIt - In house application developed to track renewable purchases
+        - Interviewed employees to gather requirements and map process flows
+        - Drafted functional specifications and user acceptance criteria based off of requirements
+        - Facilitated Scrum Activities including backlog refinement, sprint planning, daily stand-up, sprint review, and sprint retrospective
+        - QA tested the application and facilitated User Acceptance Testing - created test scripts for users, duplicated bugs and reported bugs to developers
+        - Created user manual
+        - CardsOnline Implementation - SaaS implementation for University of Arizona's CatCard office ID management software
+        - Interviewed employees to gather requirements, map process flows and determine data flow of CatCard information to other campus departments
+        - Created requirements and nice-to-haves to send to potential vendors to request information regarding their software
+        - Main point of contact for all vendors - responded to both functional and technical inquiries
+        - Helped users review quotes and requirements responses to determine and select our new vendor
+        - Worked closely with CardsOnline project manager to plan project kick-off
+        - Worked with IT Manager to document data in and out of new system so campus can stay updated with current card information
+
+    - company: University of Arizona - Financial Services Office - Administration Team
+      role:  Administrative Associate - Customer Service Manager 
+      website: https://www.fso.arizona.edu
+      date: Jul. 2019 - Jun 2016
+      highlights:
+        - Moderated customer services - received and distributed phone calls; greeted and directed guests; opened and reviewed all incoming mail
+        - Supervised front desk customer service area, including direct supervision over two student employees, office supply ordering, and facilities and maintenance requests
+        - Prepared and processed all necessary travel arrangements for all employees; including authorization to travel, conference registration, flights, hotel reservation, and reimbursement
+        - Reconciled transactions for 6 departmental purchasing cards
+        - Maintained and reconciled budgets for 23 departmental and institutional accounts using Microsoft Excel; monitored expenditures, authorized payments within prescribed limits and made recommendations for purchases, processed error correction documents
+        - Monitored purchase orders; approved invoices payments, made necessary changes to purchase orders
+        - Administrative support for Bursar and CatCard Offices
 
 education:
     - location: University of Arizona, Tucson, AZ
