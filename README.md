@@ -6,12 +6,12 @@ Python resume generator. From YAML to PDF and static HTML.
 Example Themes
 --------------
 * [simple](http://resume.hanula.com/)
-* [compact](http://jmbeach.github.io/resume/)
+* [compact](https://jordan.piel.vip/)
 
 Installing
 ----------
 
-    git clone https://github.com/hanula/resume
+    git clone https://github.com/JBenPiel/resume
     cd resume
     pip install -r requirements.txt
 
@@ -62,4 +62,4 @@ You can control which theme is used by setting `theme` property in the resume's 
 
 License
 -------
-[MIT License](https://github.com/hanula/resume/blob/master/LICENSE)
+[MIT License](https://github.com/JBenPiel/resume/blob/master/LICENSE)
