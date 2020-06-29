@@ -2,7 +2,6 @@ profile:
     name: Jordan Piel
     label: DevOps Engineer
     email: JBenPiel@gmail.com
-    phone:  (307) 316-2524
     address: Westminster, CO
     summary: >
         I am a DevOps engineer with a passion for automation, reliability, repeatability, and solving complex problems.
@@ -42,7 +41,7 @@ skills:
         - Fuseki
     - area: Caching / HA / Web Delivery
       skills:
-        - Nginx / Apache
+        - Nginx / Apache / Traefik
         - Redis / Memcached / ElastiCache
         - HAProxy / ELB
         - 'CDNs: CloudFlare / Fastly / CloudFront'
@@ -136,4 +135,3 @@ config:
     theme: simple
     github_source: https://github.com/JBenPiel/resume
     pdf_file: Jordan_Piel_Resume.pdf
-
