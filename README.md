@@ -5,13 +5,14 @@ Python resume generator. From YAML to PDF and static HTML.
 
 Example Themes
 --------------
+
 * [simple](http://resume.hanula.com/)
 * [compact](https://jordan.piel.vip/)
 
 Installing
 ----------
 
-    git clone https://github.com/JBenPiel/resume
+    git clone https://gitlab.com/jpiel/resume
     cd resume
     pip install -r requirements.txt
 
@@ -32,7 +33,6 @@ Usage
 2. Copy `config.make.example` to `config.make` and update it with your settings.
 3. Run `make` to build HTML and PDF files that will go to the `build` directory.
 
-
 ### PDF generator
 
 PDF is automatically generated along with html when running `make`.
@@ -42,16 +42,15 @@ To just create PDF file:
 
 PDF file name in `build` directory is defined by `pdf_file` property in the `config` section of your resume `yaml` file.
 
-
 ### Publishing
 
 To publish html on your server via SSH, edit `RSYNC_LOCATION` in `config.make` and run:
 
     make publish
 
-
 Customizing
 -----------
+
 This repo contains a simple and a compact theme.
 
 Add your own theme by creating `themes/<your-theme>` folder with `index.jinja2` template file.
@@ -59,7 +58,7 @@ Every other (non-jinja2) file from theme directory will be copied to final `buil
 
 You can control which theme is used by setting `theme` property in the resume's `config` section.
 
-
 License
 -------
+
 [MIT License](https://github.com/JBenPiel/resume/blob/master/LICENSE)

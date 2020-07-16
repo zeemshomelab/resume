@@ -120,5 +120,5 @@ interests:
 
 config:
     theme: simple
-    github_source: https://github.com/JBenPiel/resume
+    github_source: https://gitlab.com/jpiel/resume
     pdf_file: Erin_Piel_Resume.pdf

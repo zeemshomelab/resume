@@ -13,9 +13,9 @@ profile:
     website: https://jordan.piel.vip
 
     networks:
-        - provider: github
-          username: JBenPiel
-          url: https://github.com/JBenPiel
+        - provider: gitlab
+          username: jpiel
+          url: https://gitlab.com/jpiel
         - provider: linkedin
           username: JBenPiel
           url: https://www.linkedin.com/in/JBenPiel
@@ -71,7 +71,7 @@ skills:
 work:
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Devops Engineer
-      website: http://lasp.colorado.edu
+      website: https://lasp.colorado.edu
       date: May 2018 - Present
       summary: LASP's vision is to maintain world-leadership status in identifying and addressing key questions in planetary science, space physics, solar influences, and atmospheric science.
       highlights:
@@ -133,5 +133,5 @@ interests:
 
 config:
     theme: simple
-    github_source: https://github.com/JBenPiel/resume
+    gitlab_source: https://gitlab.com/jpiel/resume
     pdf_file: Jordan_Piel_Resume.pdf
