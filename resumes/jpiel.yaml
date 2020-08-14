@@ -4,10 +4,8 @@ profile:
     email: JBenPiel@gmail.com
     address: Westminster, CO
     summary: >
-        I am a DevOps engineer with a passion for automation, reliability, repeatability, and solving complex problems.
-        I enjoy helping other by making their process easier, which I belive in turn make everyone's job easier.
-        I take pride in communicating effectively to audiences of all types, and being able to break down complex ideas to their essence.
-        I bring 10 years of experience designing infrastructure and successfully supporting many kinds of production workloads and technologies.
+        I am a DevOps engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
+        It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
 
     image: "https://i.imgur.com/J5O8Eo8.jpg"
     website: https://jordan.piel.vip
@@ -70,34 +68,28 @@ skills:
 
 work:
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
-      role: Devops Engineer
+      role: DevOps Engineer
       website: https://lasp.colorado.edu
       date: May 2018 - Present
       summary: LASP's vision is to maintain world-leadership status in identifying and addressing key questions in planetary science, space physics, solar influences, and atmospheric science.
       highlights:
-        - Replace traditional software installation methods with CI/CD pipelines using Ansible and Jenkins.
+        - Replace traditional software installation methods with automated CI/CD pipelines using Ansible, Docker, and Jenkins.
         - Responsible for developing Ansible roles and playbooks for reliably deploying enterprise applications.
-        - Migrated Shibboleth IdP to Keycloak SSO (OpenID Connect) stack running in Docker.
-        - Implemented Traefik for providing high availability to services running in Docker.
-        - Reconfigured numerous Apache site definitions from version 2.2 to 2.4.
+        - Migrated web authentication from Shibboleth to Keycloak SSO.
+        - Reconfigured legacy Apache site definitions from version 2.2 to 2.4.
         - Designed and implemented security policies for authentication services. 
-        - Consolidate various Docker host Linux distributions to Ubuntu 18.04.
         - Build Docker services for internally developed software.
         - Setup NetApp SVMs and their snapshot policies that are used with Trident for Docker.
-        - Coordinate with local, remote, and global partners on various projects.
+        - Coordinate development of web tools with local, remote, and global partners on various projects.
         - Manage a small team of student employees practicing DevOps.
-        - Containerize existing and automate creation of new projects
     - company: University of Arizona - Financial Services Office
       role: Sr. System Administrator
       website: https://www.fso.arizona.edu/
       date: January 2012 - May 2018
-      summary: While at FSO I designed and implemented their CI/CD infrastructure for internal financial tools used throughout the University
       highlights:
-        - Implemented a continuous integration and continuous delivery pipeline through Gitlab CI for deploying development and production code to corresponding servers.
+        - Implemented a continuous integration and continuous delivery pipelines through Gitlab CI for deploying development and production code to corresponding servers.
         - Leveraged Vagrant to provision local development environment that supplied developers with a pre-configured Django project that replicates production applications in under 5 minutes.
-        - Managed and maintained Redmine, an open source project management application. Over 40 completed projects were completed with over 60,000 logged tickets.
         - Migrated multiple services and applications running on Windows to Linux; reducing licensing costs and required computing resources.
-        - Made purchasing decisions in regards to software and hardware used to support the technical infrastructure.
         - Spearheaded migrating web services to an AWS VPC.
         - Migrated virtual infrastructure from vSphere 5.1 cluster to a vSphere 6.5 cluster that leverages vSAN and HA across multiple geographical locations.
         - Integrated Puppet Enterprise to manage Linux servers in staging and production environments; allowed the state and configuration of servers to be reviewed and deployed as code.
@@ -106,10 +98,11 @@ work:
         - Migrated all software repositories from SVN to Git.
     - company: Ridgetop Group Inc.
       role: IT Technician
+      website: https://www.ridgetopgroup.com/
       date: February 2011 - November 2011
       highlights:
         - Deployed and configured internal project tracking tool, Trac.
-        - Migrated fileshares off a external hard drives and on to dedicated hardware.
+        - Migrated fileshares off external hard drives and on to dedicated hardware.
         - Responsible for vetting and purchasing technical hardware and software as needs arose.
         - Setup Windows Deployment Services for quick network installations of Windows and all necessary software packages.
 
@@ -135,3 +128,4 @@ config:
     theme: simple
     gitlab_source: https://gitlab.com/jpiel/resume
     pdf_file: Jordan_Piel_Resume.pdf
+    docx_file: https://storage.googleapis.com/jordan_piel/Jordan_PIel_Resume.docx
