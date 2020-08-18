@@ -4,7 +4,7 @@ profile:
     email: JBenPiel@gmail.com
     address: Westminster, CO
     summary: >
-        I am a DevOps engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
+        I am a DevOps Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
         It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
 
     image: "https://i.imgur.com/J5O8Eo8.jpg"
@@ -73,13 +73,10 @@ work:
       date: May 2018 - Present
       summary: LASP's vision is to maintain world-leadership status in identifying and addressing key questions in planetary science, space physics, solar influences, and atmospheric science.
       highlights:
-        - Replace traditional software installation methods with automated CI/CD pipelines using Ansible, Docker, and Jenkins.
-        - Responsible for developing Ansible roles and playbooks for reliably deploying enterprise applications.
-        - Migrated web authentication from Shibboleth to Keycloak SSO.
-        - Reconfigured legacy Apache site definitions from version 2.2 to 2.4.
-        - Designed and implemented security policies for authentication services. 
-        - Build Docker services for internally developed software.
-        - Setup NetApp SVMs and their snapshot policies that are used with Trident for Docker.
+        - Replaced traditional software installation methods with automated CI/CD pipelines using Ansible, Docker, and Jenkins.
+        - Responsible for developing Ansible roles and playbooks for deploying enterprise applications reliably and repeatably.
+        - Migrated web authentication idP from Shibboleth to Keycloak SSO.
+        - Designed and implemented authentication policies for multiple realms.
         - Coordinate development of web tools with local, remote, and global partners on various projects.
         - Manage a small team of student employees practicing DevOps.
     - company: University of Arizona - Financial Services Office
@@ -87,15 +84,12 @@ work:
       website: https://www.fso.arizona.edu/
       date: January 2012 - May 2018
       highlights:
-        - Implemented a continuous integration and continuous delivery pipelines through Gitlab CI for deploying development and production code to corresponding servers.
+        - Implemented continuous integration and continuous delivery pipelines through Gitlab CI for deploying development and production code to corresponding servers.
         - Leveraged Vagrant to provision local development environment that supplied developers with a pre-configured Django project that replicates production applications in under 5 minutes.
         - Migrated multiple services and applications running on Windows to Linux; reducing licensing costs and required computing resources.
         - Spearheaded migrating web services to an AWS VPC.
         - Migrated virtual infrastructure from vSphere 5.1 cluster to a vSphere 6.5 cluster that leverages vSAN and HA across multiple geographical locations.
         - Integrated Puppet Enterprise to manage Linux servers in staging and production environments; allowed the state and configuration of servers to be reviewed and deployed as code.
-        - Configured group policy for software package deployment with Powershell, providing IT support to the 300+ employees in the Financial Services department.
-        - Setup software and security policies for MacOS clients, which are distributed and enforced with JAMF software suite (Casper).
-        - Migrated all software repositories from SVN to Git.
     - company: Ridgetop Group Inc.
       role: IT Technician
       website: https://www.ridgetopgroup.com/
