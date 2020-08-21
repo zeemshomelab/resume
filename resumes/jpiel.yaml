@@ -1,10 +1,10 @@
 profile:
     name: Jordan Piel
-    label: DevOps Engineer
+    label: Senior DevOps Engineer
     email: JBenPiel@gmail.com
     address: Westminster, CO
     summary: >
-        I am a DevOps Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
+        I am a Senior DevOps Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
         It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
 
     image: "https://i.imgur.com/J5O8Eo8.jpg"
@@ -22,83 +22,85 @@ skills:
     - area: Platforms
       skills:
         - Docker
-        - Linux of all breeds
-        - Vagrant / KVM / VMWare
+        - Linux
         - AWS / GCP
+        - Vagrant / KVM / VMWare
     - area: Orchestration / Management
       skills:
         - Ansible / Puppet
         - CloudFormation / Terraform
         - Log Aggregation, Metrics with Splunk / CloudWatch
-        - Jenkins / Gitlab Continuous Integration/Continuous Deployments
+        - Jenkins / Gitlab CI
     - area: Databases
       skills:
-        - MySQL / PostgreSQL
-        - ElasticSearch
+        - PostgreSQL
+        - MySQL / MariaDB
         - RDS
-        - Fuseki
+        - Apache Fuseki
     - area: Caching / HA / Web Delivery
       skills:
         - Nginx / Apache / Traefik
         - Redis / Memcached / ElastiCache
         - HAProxy / ELB
-        - 'CDNs: CloudFlare / Fastly / CloudFront'
+        - CloudFlare / CloudFront
     - area: Programming / Tools
       skills:
         - Python
         - Bash
         - Java
-        - Git / Source Control
+        - Git / SVN
     - area: Networking
       skills:
         - DNS / Route53
-        - SMTP / SES
         - LAN / WAN Networking / VPC
         - Firewalls / iptables / Security Groups
+        - SMTP
     - area: Authentication
       skills:
-        - LDAP / AD
+        - LDAP / Active Directory
         - Token / Cookie Management
         - OIDC / SAML2
-        - 'SSO: Keycloak (RedHat SSO) / Shibboleth'
+        - 'SSO: Keycloak / Shibboleth'
     - area: Web Frameworks
       skills:
         - Django
+        - Angular
         - Ruby on Rails
 
 work:
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
-      role: DevOps Engineer
+      role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
       date: May 2018 - Present
       summary: LASP's vision is to maintain world-leadership status in identifying and addressing key questions in planetary science, space physics, solar influences, and atmospheric science.
       highlights:
-        - Replaced traditional software installation methods with automated CI/CD pipelines using Ansible, Docker, and Jenkins.
-        - Responsible for developing Ansible roles and playbooks for deploying enterprise applications reliably and repeatably.
-        - Migrated web authentication idP from Shibboleth to Keycloak SSO.
-        - Designed and implemented authentication policies for multiple realms.
-        - Coordinate development of web tools with local, remote, and global partners on various projects.
-        - Manage a small team of student employees practicing DevOps.
+        - Migrated SSO web authentication stack from Shibboleth to Keycloak for dozens of internal and external websites. Created and managed clients and groups by leveraging Keycloak specific modules in Ansible.
+        - Defined and implemented automation routines for the lab. Worked with various teams internally and externally to understand their needs and steer them towards modern DevOps methodologies. Migrated many dozens of applications to a GitOps standard in a hybrid datacenter. Defined and built cloud infrastructure predominantly using AWS and Terraform.
+        - Designed and developed application build and deployment jobs in Jenkins with the use of Ansible and Jenkins-Job-Builder. Built and maintained the various Jenkins containers for the lab used for a wide array of tasks from cron scheduling to scientific data processing. Migrated multiple legacy Hudson instances to Jenkins.
+        - Wrote and maintained Python scripts to automate the action of creating and maintaining documentation within Confluence for various software and processes.
+        - Tracked team activity through Jira and defined sprint stories for the team. Ran daily standups to checkin on teammembers status.
+        - Manage a small 1-2 person team of student employees that want to gain experience with DevOps practices.
     - company: University of Arizona - Financial Services Office
-      role: Sr. System Administrator
+      role: Senior System Administrator
       website: https://www.fso.arizona.edu/
       date: January 2012 - May 2018
       highlights:
-        - Implemented continuous integration and continuous delivery pipelines through Gitlab CI for deploying development and production code to corresponding servers.
-        - Leveraged Vagrant to provision local development environment that supplied developers with a pre-configured Django project that replicates production applications in under 5 minutes.
-        - Migrated multiple services and applications running on Windows to Linux; reducing licensing costs and required computing resources.
-        - Spearheaded migrating web services to an AWS VPC.
-        - Migrated virtual infrastructure from vSphere 5.1 cluster to a vSphere 6.5 cluster that leverages vSAN and HA across multiple geographical locations.
-        - Integrated Puppet Enterprise to manage Linux servers in staging and production environments; allowed the state and configuration of servers to be reviewed and deployed as code.
+        - Integrated Puppet to manage Linux servers in staging and production environments; allowed the state and configuration of servers to be reviewed and deployed as code. Primary owner of Puppet modules and manifests used for internal various one-off processes. Over time migrated to using Ansible.
+        - Designed and implemented pipelines with Gitlab CI for building and testing web applications before pushing development and production deployments to corresponding servers.
+        - Migrated multi-site virtual appliance infrastructure from vSphere 5.1 cluster to a vSphere 6.5 cluster that leverages vSAN and HA across multiple geographical locations. Also migrated multiple services and applications running on Windows to Linux; reducing total licensing costs and required computing resources.
+        - Implemented and fulfilled roadmap for decommissioning legacy webserver running a monolithic application by breaking it out in to multiple microservices.
+        - Leveraged Vagrant to provision local development environments that supplied developers with a pre-build Django project that replicates production web applications.
+        - Configured group policies with PowerShell for software package deployments providing support to the 300+ employees in the Financial Services department.
+        - Spearheaded migrating of web services to an AWS VPC.
     - company: Ridgetop Group Inc.
       role: IT Technician
       website: https://www.ridgetopgroup.com/
       date: February 2011 - November 2011
       highlights:
-        - Deployed and configured internal project tracking tool, Trac.
-        - Migrated fileshares off external hard drives and on to dedicated hardware.
+        - Built and configured Windows Deployment Services for quick network installations of Windows clients and all necessary software packages.
+        - Deployed and configured internal project and issue tracking tool Trac.
+        - Migrated file shares off individual external hard drives and on to dedicated hardware.
         - Responsible for vetting and purchasing technical hardware and software as needs arose.
-        - Setup Windows Deployment Services for quick network installations of Windows and all necessary software packages.
 
 education:
     - location: University of Arizona, Tucson, AZ
