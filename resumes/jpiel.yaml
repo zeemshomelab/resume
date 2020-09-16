@@ -40,7 +40,7 @@ skills:
     - area: Caching / HA / Web Delivery
       skills:
         - Nginx / Apache / Traefik
-        - Redis / Memcached / ElastiCache
+        - Redis / Mongo / Memcached
         - HAProxy / ELB
         - CloudFlare / CloudFront
     - area: Programming / Tools
@@ -79,7 +79,6 @@ work:
         - Designed and developed application build and deployment jobs in Jenkins with the use of Ansible and Jenkins-Job-Builder. Built and maintained the various Jenkins containers for the lab used for a wide array of tasks from cron scheduling to scientific data processing. Migrated multiple legacy Hudson instances to Jenkins.
         - Wrote and maintained Python scripts to automate the action of creating and maintaining documentation within Confluence for various software and processes.
         - Tracked team activity through Jira and defined sprint stories for the team. Ran daily standups to checkin on teammembers status.
-        - Manage a small 1-2 person team of student employees that want to gain experience with DevOps practices.
     - company: University of Arizona - Financial Services Office
       role: Senior System Administrator
       website: https://www.fso.arizona.edu/
