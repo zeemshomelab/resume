@@ -71,14 +71,15 @@ work:
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
-      date: May 2018 - Present
+      date: May 2018 - October 2020
       summary: LASP's vision is to maintain world-leadership status in identifying and addressing key questions in planetary science, space physics, solar influences, and atmospheric science.
       highlights:
         - Migrated SSO web authentication stack from Shibboleth to Keycloak for dozens of internal and external websites. Created and managed clients and groups by leveraging Keycloak specific modules in Ansible.
-        - Defined and implemented automation routines for the lab. Worked with various teams internally and externally to understand their needs and steer them towards modern DevOps methodologies. Migrated many dozens of applications to a GitOps standard in a hybrid datacenter. Defined and built cloud infrastructure predominantly using AWS and Terraform.
-        - Designed and developed application build and deployment jobs in Jenkins with the use of Ansible and Jenkins-Job-Builder. Built and maintained the various Jenkins containers for the lab used for a wide array of tasks from cron scheduling to scientific data processing. Migrated multiple legacy Hudson instances to Jenkins.
-        - Wrote and maintained Python scripts to automate the action of creating and maintaining documentation within Confluence for various software and processes.
-        - Tracked team activity through Jira and defined sprint stories for the team. Ran daily standups to checkin on teammembers status.
+        - Defined and implemented automation routines for the lab. Worked with various teams internally and externally to understand their needs and steer them towards modern DevOps methodologies.
+        - Migrated many dozens of applications to a GitOps standard in a hybrid datacenter. Defined and built cloud infrastructure predominantly using AWS and Terraform.
+        - Designed and developed application build and deployment jobs in Jenkins with the use of Ansible and Jenkins-Job-Builder.
+        - Built and maintained the various Jenkins containers for the lab used for a wide array of tasks from cron scheduling to scientific data processing. Migrated multiple legacy Hudson instances to Jenkins.
+        - Worked together with teammates to write and maintain Python scripts to automate the action of creating and maintaining documentation within Confluence for various software and processes.
     - company: University of Arizona - Financial Services Office
       role: Senior System Administrator
       website: https://www.fso.arizona.edu/
