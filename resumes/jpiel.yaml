@@ -88,7 +88,7 @@ work:
         - Integrated Puppet to manage Linux servers in staging and production environments; allowed the state and configuration of servers to be reviewed and deployed as code. Primary owner of Puppet modules and manifests used for internal various one-off processes. Over time migrated to using Ansible.
         - Designed and implemented pipelines with Gitlab CI for building and testing web applications before pushing development and production deployments to corresponding servers.
         - Migrated multi-site virtual appliance infrastructure from vSphere 5.1 cluster to a vSphere 6.5 cluster that leverages vSAN and HA across multiple geographical locations. Also migrated multiple services and applications running on Windows to Linux; reducing total licensing costs and required computing resources.
-        - Implemented and fulfilled roadmap for decommissioning legacy webserver running a monolithic application by breaking it out in to multiple microservices.
+        - Implemented and fulfilled roadmap for decommissioning legacy web server running a monolithic application by breaking it out in to multiple microservices.
         - Leveraged Vagrant to provision local development environments that supplied developers with a pre-build Django project that replicates production web applications.
         - Configured group policies with PowerShell for software package deployments providing support to the 300+ employees in the Financial Services department.
         - Spearheaded migrating of web services to an AWS VPC.
