@@ -4,16 +4,15 @@ profile:
     email: eahowden3746@gmail.com
     address: Westminster, CO
     summary: >
-        Experienced Project Manager, Business Analyst, and Scrum Master with a passion for Agile and coaching teams.
-        Skilled in Microsoft Office, Scrum/Agile Techniques, and various Project Management tools. 
-
+        Experienced Project Manager, Business Analyst, and Advanced Certified Scrum Master with a passion for Agile and coaching teams.
+        Skilled in Microsoft Office, Scrum/Agile Techniques, and various Project Management tools.
     image: "https://i.imgur.com/Sc73zFB.jpg"
     website: https://erin.piel.vip
 
     networks:
-        - provider: ScrumAlliance
-          username: ehowden
-          url: https://www.scrumalliance.org/community/profile/ehowden
+        - provider: github
+          username: erinpiel
+          url: https://github.com/erinpiel
         - provider: linkedin
           username: erinhpiel
           url: https://www.linkedin.com/in/erinhpiel
