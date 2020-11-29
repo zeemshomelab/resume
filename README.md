@@ -7,7 +7,7 @@ Example Themes
 --------------
 
 * [simple](http://resume.hanula.com/)
-* [compact](https://jordan.piel.vip/)
+* [modern](https://jordan.piel.vip/)
 
 Installing
 ----------

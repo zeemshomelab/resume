@@ -6,11 +6,13 @@ profile:
     summary: >
         I am a Senior DevOps Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
         It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
-
     image: "https://i.imgur.com/J5O8Eo8.jpg"
     website: https://jordan.piel.vip
 
     networks:
+        - provider: github
+          username: JBenPiel
+          url: https://github.com/JBenPiel
         - provider: gitlab
           username: jpiel
           url: https://gitlab.com/jpiel
@@ -121,7 +123,6 @@ interests:
     - Motorsports
 
 config:
-    theme: simple
-    gitlab_source: https://gitlab.com/jpiel/resume
+    theme: modern
     pdf_file: Jordan_Piel_Resume.pdf
     docx_file: https://storage.googleapis.com/jordan_piel/Jordan_Piel_Resume.docx
