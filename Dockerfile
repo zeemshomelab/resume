@@ -1,4 +1,4 @@
-FROM python:3.9-slim as build
+FROM python:3.9 as build
 
 ARG BUILD_DEPS="build-essential libxml2-dev libxslt1-dev libffi-dev libz-dev libcairo2 libglib2.0-0 libpango-1.0-0 libpangocairo-1.0-0"
 RUN apt-get update && \
