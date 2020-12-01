@@ -8,7 +8,6 @@ profile:
         Skilled in Microsoft Office, Scrum/Agile Techniques, and various Project Management tools.
     image: "https://i.imgur.com/Sc73zFB.jpg"
     website: https://erin.piel.vip
-
     networks:
         - provider: github
           username: erinpiel
