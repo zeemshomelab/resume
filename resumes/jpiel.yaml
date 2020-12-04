@@ -23,46 +23,39 @@ profile:
 skills:
     - area: Platforms
       skills:
-        - Docker
-        - Linux
-        - AWS / GCP
-        - Vagrant / KVM / VMWare
+        - Docker / Vagrant
+        - Linux / Windows
+        - VMWare / AWS / GCP
     - area: Orchestration / Management
       skills:
-        - Ansible / Puppet
-        - CloudFormation / Terraform
+        - Ansible / Puppet / Terraform
         - Log Aggregation, Metrics with Splunk / CloudWatch
-        - Jenkins / Gitlab CI
+        - Gitlab CI / Jenkins
     - area: Databases
       skills:
         - PostgreSQL
-        - MySQL / MariaDB
-        - RDS
-        - Apache Fuseki
-    - area: Caching / HA / Web Delivery
+        - MariaDB / MySQL
+        - MS SQL
+    - area: Web Delivery / Caching / HA
       skills:
-        - Nginx / Apache / Traefik
+        - Apache / Nginx / Traefik
         - Redis / Mongo / Memcached
         - HAProxy / ELB
-        - CloudFlare / CloudFront
     - area: Programming / Tools
       skills:
-        - Python
-        - Bash
-        - Java
+        - Python / Bash
+        - Java / PHP
         - Git / SVN
     - area: Networking
       skills:
-        - DNS / Route53
-        - LAN / WAN Networking / VPC
+        - DNS / DHCP
+        - LAN / WAN / VLAN / VPC
         - Firewalls / iptables / Security Groups
-        - SMTP
     - area: Authentication
       skills:
         - LDAP / Active Directory
         - Token / Cookie Management
-        - OIDC / SAML2
-        - 'SSO: Keycloak / Shibboleth'
+        - OIDC / OAuth2 / SAML2
     - area: Web Frameworks
       skills:
         - Django
