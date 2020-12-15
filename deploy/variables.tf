@@ -1,9 +1,9 @@
 variable "prefix" {
-  default = "resume"
+  default = "jordan-resume"
 }
 
 variable "project" {
-  default = "jordan-resume"
+  default = "resume"
 }
 
 variable "contact" {
