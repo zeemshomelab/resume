@@ -1,5 +1,5 @@
 variable "prefix" {
-  default = "jordan-resume"
+  default = "jordan"
 }
 
 variable "project" {
@@ -28,7 +28,7 @@ variable "subdomain" {
   description = "Subdomain per environment"
   type        = map(string)
   default = {
-    production = "resume"
-    staging    = "resume.staging"
+    prod    = "resume"
+    staging = "resume.staging"
   }
 }
