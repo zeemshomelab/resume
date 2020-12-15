@@ -41,7 +41,7 @@ Production Plan:
     - cd deploy/
     - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
     - terraform init
-    - terraform workspace select production || terraform workspace new production
+    - terraform workspace select prod || terraform workspace new prod
     - terraform plan
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
@@ -52,7 +52,7 @@ Production Apply:
     - cd deploy/
     - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
     - terraform init
-    - terraform workspace select production
+    - terraform workspace select prod
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
@@ -62,7 +62,7 @@ Production Destroy:
   script:
     - cd deploy/
     - terraform init
-    - terraform workspace select production
+    - terraform workspace select prod
     - terraform destroy -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
