@@ -3,7 +3,7 @@
 
 # Put these into config.make to override with your setup
 RESUME ?= resumes/jpiel.yaml
-RSYNC_LOCATION ?= jordan.piel.vip:/var/www/resume/
+RSYNC_LOCATION ?= jordanpiel.net:/var/www/resume/
 
 PYTHON ?= $(shell which python3)
 RSYNC ?= $(shell which rsync)
@@ -11,7 +11,7 @@ RSYNC_ARGS ?= av
 BUILD_DIR ?= build/
 BUILD_ARGS ?= --output_dir $(BUILD_DIR)
 BUILD ?= $(PYTHON) build.py $(BUILD_ARGS)
-DOCKER_TAG ?= jpiel/jordan-resume:latest
+DOCKER_TAG ?= jpiel/resume:latest
 DOCKER ?= docker build . -t $(DOCKER_TAG)
 DOCKER_PUSH ?= docker push $(DOCKER_TAG)
 
