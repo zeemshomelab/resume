@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  jpiel-resume:
-    image: jpiel/jordan-resume:latest
-    restart: always
+  resume:
+    build:
+      context: .
     ports:
       - "8080:80"
