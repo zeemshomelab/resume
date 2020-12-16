@@ -43,8 +43,8 @@ resource "aws_lb_listener" "resume_https" {
   load_balancer_arn = aws_lb.resume.arn
   port              = 443
   protocol          = "HTTPS"
-
-  certificate_arn = aws_acm_certificate_validation.cert.certificate_arn
+  ssl_policy        = "ELBSecurityPolicy-FS-1-2-2019-08"
+  certificate_arn   = aws_acm_certificate_validation.cert.certificate_arn
 
   default_action {
     type             = "forward"
@@ -79,60 +79,4 @@ resource "aws_security_group" "lb" {
   }
 
   tags = local.common_tags
-}
-
-resource "aws_lb_ssl_negotiation_policy" "secure_ssl" {
-  name          = "${local.prefix}-ssl"
-  load_balancer = aws_lb.resume.id
-  lb_port       = 443
-
-  attribute {
-    name  = "Protocol-TLSv1"
-    value = "false"
-  }
-
-  attribute {
-    name  = "Protocol-TLSv1.1"
-    value = "false"
-  }
-
-  attribute {
-    name  = "Protocol-TLSv1.2"
-    value = "true"
-  }
-
-  attribute {
-    name  = "Server-Defined-Cipher-Order"
-    value = "true"
-  }
-
-  attribute {
-    name  = "ECDHE-ECDSA-AES128-GCM-SHA256"
-    value = "true"
-  }
-
-  attribute {
-    name  = "ECDHE-RSA-AES128-GCM-SHA256"
-    value = "true"
-  }
-
-  attribute {
-    name  = "ECDHE-ECDSA-AES256-GCM-SHA384"
-    value = "true"
-  }
-
-  attribute {
-    name  = "ECDHE-RSA-AES256-GCM-SHA384"
-    value = "true"
-  }
-
-  attribute {
-    name  = "DHE-RSA-AES128-GCM-SHA256"
-    value = "true"
-  }
-
-  attribute {
-    name  = "DHE-RSA-AES256-GCM-SHA384"
-    value = "true"
-  }
 }
