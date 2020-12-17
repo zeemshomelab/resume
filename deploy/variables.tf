@@ -28,7 +28,7 @@ variable "subdomain" {
   description = "Subdomain per environment"
   type        = map(string)
   default = {
-    prod    = "resume"
-    staging = "resume.staging"
+    prod  = "resume"
+    stage = "stage.resume"
   }
 }
