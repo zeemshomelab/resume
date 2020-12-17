@@ -7,6 +7,8 @@ image:
 stages:
   - Test and Lint
   - Build and Push
+  - Stage Plan
+  - Stage Apply
   - Production Plan
   - Production Apply
   - Destroy
@@ -19,21 +21,43 @@ Validate Terraform:
     - terraform init validate
     - terraform fmt -check
   rules:
-    - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master" || $CI_COMMIT_BRANCH == "master"'
+    - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^(master|stage)$/ || $CI_COMMIT_BRANCH =~ /^(master|stage)$/'
 
 Build and Push:
-  image: docker:19.03.12
+  image: docker:19.03
   services:
-    - docker:19.03.12-dind
+    - docker:19.03-dind
   stage: Build and Push
   script:
     - apk add python3 py3-pip
     - pip3 install awscli
-    - $(aws ecr get-login --no-include-email --region us-east-1)
+    - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/e7k4f6o3
     - docker build --compress -t $ECR_REPO:$CI_COMMIT_SHORT_SHA -t $ECR_REPO:latest .
     - docker push $ECR_REPO:$CI_COMMIT_SHORT_SHA && docker push $ECR_REPO:latest
   rules:
-    - if: '$CI_COMMIT_BRANCH == "master"'
+    - if: '$CI_COMMIT_BRANCH =~ /^(master|stage)$/'
+
+Stage Plan:
+  stage: Stage Plan
+  script:
+    - cd deploy/
+    - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
+    - terraform init
+    - terraform workspace select stage || terraform workspace new stage
+    - terraform plan
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "stage"'
+
+Stage Apply:
+  stage: Stage Apply
+  script:
+    - cd deploy/
+    - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
+    - terraform init
+    - terraform workspace select stage
+    - terraform apply -auto-approve
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "stage"'
 
 Production Plan:
   stage: Production Plan
@@ -56,6 +80,17 @@ Production Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
+
+# Stage Destroy:
+#   stage: Destroy
+#   script:
+#     - cd deploy/
+#     - terraform init
+#     - terraform workspace select stage
+#     - terraform destroy -auto-approve
+#   rules:
+#     - if: '$CI_COMMIT_BRANCH == "stage"'
+#       when: manual
 
 # Production Destroy:
 #   stage: Destroy
