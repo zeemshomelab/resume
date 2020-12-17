@@ -16,7 +16,7 @@ variable "bastion_key_name" {
 
 variable "ecr_image_resume" {
   description = "ECR image for Resume"
-  default     = "727688841385.dkr.ecr.us-east-1.amazonaws.com/jordan-resume:latest"
+  default     = "public.ecr.aws/e7k4f6o3/jordan-resume:latest"
 }
 
 variable "dns_zone_name" {
@@ -28,7 +28,7 @@ variable "subdomain" {
   description = "Subdomain per environment"
   type        = map(string)
   default = {
-    prod    = "resume"
-    staging = "resume.staging"
+    prod  = "resume"
+    stage = "stage.resume"
   }
 }
