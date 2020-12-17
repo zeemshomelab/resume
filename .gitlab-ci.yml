@@ -81,24 +81,13 @@ Production Apply:
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
 
-# Stage Destroy:
-#   stage: Destroy
-#   script:
-#     - cd deploy/
-#     - terraform init
-#     - terraform workspace select stage
-#     - terraform destroy -auto-approve
-#   rules:
-#     - if: '$CI_COMMIT_BRANCH == "stage"'
-#       when: manual
-
-# Production Destroy:
-#   stage: Destroy
-#   script:
-#     - cd deploy/
-#     - terraform init
-#     - terraform workspace select prod
-#     - terraform destroy -auto-approve
-#   rules:
-#     - if: '$CI_COMMIT_BRANCH == "master"'
-#       when: manual
+Stage Destroy:
+  stage: Destroy
+  script:
+    - cd deploy/
+    - terraform init
+    - terraform workspace select stage
+    - terraform destroy -auto-approve
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "stage"'
+      when: manual
