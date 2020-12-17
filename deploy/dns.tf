@@ -12,9 +12,10 @@ resource "aws_route53_record" "app" {
 }
 
 resource "aws_route53_record" "app_caa" {
-  zone_id = data.aws_route53_zone.zone.zone_id
-  name    = data.aws_route53_zone.zone.name
-  type    = "CAA"
+  allow_overwrite = true
+  zone_id         = data.aws_route53_zone.zone.zone_id
+  name            = data.aws_route53_zone.zone.name
+  type            = "CAA"
   records = [
     "0 issue \"amazon.com\"",
     "0 issuewild \"amazon.com\""
