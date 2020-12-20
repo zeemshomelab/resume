@@ -1,10 +1,10 @@
-data "aws_ami" "amazon_linux" {
+data "aws_ami" "ubuntu_focal" {
   most_recent = true
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-2.0.*-x86_64-gp2"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
   }
-  owners = ["amazon"]
+  owners = ["099720109477"]
 }
 
 resource "aws_iam_role" "bastion" {
@@ -25,7 +25,7 @@ resource "aws_iam_instance_profile" "bastion" {
 }
 
 resource "aws_instance" "bastion" {
-  ami                  = data.aws_ami.amazon_linux.id
+  ami                  = data.aws_ami.ubuntu_focal.id
   instance_type        = "t2.micro"
   user_data            = file("./templates/bastion/user-data.sh")
   iam_instance_profile = aws_iam_instance_profile.bastion.name
