@@ -4,11 +4,14 @@ data "aws_route53_zone" "zone" {
 
 resource "aws_route53_record" "app" {
   zone_id = data.aws_route53_zone.zone.zone_id
-  name    = "${lookup(var.subdomain, terraform.workspace)}.${data.aws_route53_zone.zone.name}"
-  type    = "CNAME"
-  ttl     = "300"
+  name    = "${lookup(var.subdomain, terraform.workspace)}${data.aws_route53_zone.zone.name}"
+  type    = "A"
 
-  records = [aws_lb.resume.dns_name]
+  alias {
+    name                   = aws_lb.resume.dns_name
+    zone_id                = data.aws_elb_hosted_zone_id.main.id
+    evaluate_target_health = false
+  }
 }
 
 resource "aws_acm_certificate" "cert" {
