@@ -58,6 +58,7 @@ Stage Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "stage"'
+      when: manual
 
 Production Plan:
   stage: Production Plan
