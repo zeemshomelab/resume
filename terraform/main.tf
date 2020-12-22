@@ -2,21 +2,21 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.21.0"
+      version = "~> 3.22.0"
     }
   }
 
   backend "s3" {
     bucket         = "jordan-resume"
     key            = "jordan-resume.tfstate"
-    region         = "us-east-1"
+    region         = "us-west-2"
     encrypt        = true
     dynamodb_table = "jordan-resume-tfstate-lock"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
 
 locals {
