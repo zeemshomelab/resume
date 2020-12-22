@@ -46,7 +46,7 @@ You can control which theme is used by setting `theme` property in the resume's 
 Example Themes:
 
 * [simple](http://resume.hanula.com/)
-* [modern](https://resume.jordanpiel.net/)
+* [modern](https://jordanpiel.net/)
 
 # License
 
