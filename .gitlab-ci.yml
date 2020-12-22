@@ -1,5 +1,5 @@
 image:
-  name: hashicorp/terraform:0.14.2
+  name: hashicorp/terraform:0.14.3
   entrypoint:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
@@ -24,9 +24,9 @@ Validate Terraform:
     - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^(master|stage)$/ || $CI_COMMIT_BRANCH =~ /^(master|stage)$/'
 
 Build and Push:
-  image: docker:19.03
+  image: docker:20.10
   services:
-    - docker:19.03-dind
+    - docker:20.10-dind
   stage: Build and Push
   script:
     - apk add python3 py3-pip

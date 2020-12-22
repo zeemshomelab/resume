@@ -114,17 +114,17 @@
 
   </main>
   <footer>
-    <p class="pull-right">
+    <p>
       &copy; <script type="text/javascript">
 		  document.write(new Date().getFullYear());
 		  </script> {{ profile.name }} |
       Download
-	    <a href="/{{ config.pdf_file }}">PDF</a>
+	    <a href="/{{ config.pdf_file }}" download="{{ config.pdf_file }}">PDF</a>
       {% if config.docx_file %}
       or 
-      <a href="{{ config.docx_file }}">DOCX</a>
+      <a href="{{ config.docx_file }}" download="{{ config.docx_file }}">DOCX</a>
       {% endif %} |
-      <a href="#" onclick="javascript:window.print(); return false">Print</a> |
+      <a href="/" onclick="window.print();">Print</a> |
       <a href="#">Top</a>
     </p>
   </footer>
