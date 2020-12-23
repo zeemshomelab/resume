@@ -1,5 +1,6 @@
 resource "aws_ecs_cluster" "main" {
-  name = "${local.prefix}-cluster"
+  name               = "${local.prefix}-cluster"
+  capacity_providers = ["FARGATE", "FARGATE_SPOT"]
 
   tags = local.common_tags
 }
@@ -57,10 +58,6 @@ resource "aws_ecs_task_definition" "resume" {
   execution_role_arn       = aws_iam_role.task_execution_role.arn
   task_role_arn            = aws_iam_role.app_iam_role.arn
 
-  volume {
-    name = "static"
-  }
-
   tags = local.common_tags
 }
 
@@ -92,9 +89,13 @@ resource "aws_ecs_service" "resume" {
   name            = "${local.prefix}-resume"
   cluster         = aws_ecs_cluster.main.name
   task_definition = aws_ecs_task_definition.resume.family
-  desired_count   = 1
-  launch_type     = "FARGATE"
+  desired_count   = 2
   depends_on      = [aws_lb_listener.resume_https]
+
+  capacity_provider_strategy {
+    capacity_provider = "FARGATE_SPOT"
+    weight            = 1
+  }
 
   network_configuration {
     subnets = [
