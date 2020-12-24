@@ -101,6 +101,8 @@ Production Destroy:
     - terraform workspace select prod
     - terraform destroy -auto-approve
   rules:
-    - if: '$CI_COMMIT_BRANCH == "prod"'
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
-      when: manual
+      when: delayed
+      start_in: '14 hours'
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: never
