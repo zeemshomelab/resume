@@ -92,3 +92,17 @@ Stage Destroy:
   rules:
     - if: '$CI_COMMIT_BRANCH == "stage"'
       when: manual
+
+Production Destroy:
+  stage: Destroy
+  script:
+    - cd terraform/
+    - terraform init
+    - terraform workspace select prod
+    - terraform destroy -auto-approve
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: delayed
+      start_in: '14 hours'
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: never

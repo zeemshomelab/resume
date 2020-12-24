@@ -86,11 +86,12 @@ resource "aws_security_group" "ecs_service" {
 }
 
 resource "aws_ecs_service" "resume" {
-  name            = "${local.prefix}-resume"
-  cluster         = aws_ecs_cluster.main.name
-  task_definition = aws_ecs_task_definition.resume.family
-  desired_count   = 2
-  depends_on      = [aws_lb_listener.resume_https]
+  name             = "${local.prefix}-resume"
+  cluster          = aws_ecs_cluster.main.name
+  task_definition  = aws_ecs_task_definition.resume.family
+  desired_count    = 2
+  depends_on       = [aws_lb_listener.resume_https]
+  platform_version = "1.4.0"
 
   capacity_provider_strategy {
     capacity_provider = "FARGATE_SPOT"
