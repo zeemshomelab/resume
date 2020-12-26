@@ -41,7 +41,7 @@ Stage Plan:
   stage: Stage Plan
   script:
     - cd terraform/
-    - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
+    - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
     - terraform init
     - terraform workspace select stage || terraform workspace new stage
     - terraform plan
@@ -52,7 +52,7 @@ Stage Apply:
   stage: Stage Apply
   script:
     - cd terraform/
-    - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
+    - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
     - terraform init
     - terraform workspace select stage
     - terraform apply -auto-approve
@@ -64,7 +64,7 @@ Production Plan:
   stage: Production Plan
   script:
     - cd terraform/
-    - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
+    - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
     - terraform init
     - terraform workspace select prod || terraform workspace new prod
     - terraform plan
@@ -75,7 +75,7 @@ Production Apply:
   stage: Production Apply
   script:
     - cd terraform/
-    - export TF_VAR_ecr_image_app=$ECR_REPO:$CI_COMMIT_SHORT_SHA
+    - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
     - terraform init
     - terraform workspace select prod
     - terraform apply -auto-approve
