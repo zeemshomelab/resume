@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>{% if config.analytics %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ config.analytics }}');
+  </script>{% endif %}
   <meta charset="UTF-8">
   <title>{{ profile.name }} - Resume</title>
   <meta name="description" content="Simple CV created with HTML, CSS, and a sprinkle of JS">
