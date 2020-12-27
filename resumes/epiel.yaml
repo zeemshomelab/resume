@@ -117,6 +117,6 @@ interests:
     - Hiking / Travel
 
 config:
+    analytics: G-YN4JEX3HP7
     theme: modern
-    github_source: https://gitlab.com/jpiel/resume
     pdf_file: Erin_Piel_Resume.pdf
