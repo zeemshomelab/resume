@@ -39,17 +39,16 @@ Build and Push:
     - if: '$CI_COMMIT_BRANCH =~ /^(master|stage)$/'
 
 Buildx and Push:
-  stage: Buildx and Push
+  stage: Build and Push
   image: docker:20.10
   services:
     - name: docker:20.10-dind
       command: ["--experimental"]
   before_script:
     - export BUILDX_VERSION="v0.5.0"
-    - curl -sSLo docker-buildx "https://github.com/docker/buildx/releases/download/$BUILDX_VERSION/buildx-$BUILDX_VERSION.linux-amd64"
-    - chmod a+x docker-buildx
     - mkdir -p ~/.docker/cli-plugins
-    - mv buildx ~/.docker/cli-plugins/docker-buildx
+    - wget -O ~/.docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/$BUILDX_VERSION/buildx-$BUILDX_VERSION.linux-amd64"
+    - chmod a+x ~/.docker/cli-plugins/docker-buildx
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use --name mybuilder
   script:
