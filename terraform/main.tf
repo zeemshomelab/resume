@@ -9,14 +9,14 @@ terraform {
   backend "s3" {
     bucket         = "jordan-resume"
     key            = "jordan-resume.tfstate"
-    region         = "us-west-2"
+    region         = "us-east-1"
     encrypt        = true
     dynamodb_table = "jordan-resume-tfstate-lock"
   }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 locals {
