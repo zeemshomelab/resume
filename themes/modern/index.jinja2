@@ -7,12 +7,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', '{{ config.analytics }}');
   </script>{% endif %}
   <meta charset="UTF-8">
   <title>{{ profile.name }} - Resume</title>
-  <meta name="description" content="Simple CV created with HTML, CSS, and a sprinkle of JS">
+  <meta name="description" content="Simple résumé created with HTML and CSS">
   <link rel="icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
@@ -20,10 +19,10 @@
 </head>
 
 <body>
-  <header>
+  <header>{% if profile.image %}
     <div>
       <img src="{{ profile.image }}" alt="">
-    </div>
+    </div>{% endif %}
     <section>
       <h1>
         {{ profile.name }}
@@ -32,107 +31,76 @@
       </h1>
     </section>
     <section>
-      <p>{{ profile.summary }}</p>
-      {% for network in profile.networks %}
+      <p>{{ profile.summary }}</p>{% for network in profile.networks %}
         <a href="{{ network.url }}" target="_blank">
           <i class="fab fa-{{ network.provider }}"></i>
-        </a>
-      {% endfor %}
+        </a>{% endfor %}
     </section>
   </header>
   
-  <main>
-    {% if work %}
+  <main>{% if work %}
     <section>
       <h3>{{ labels.work or 'Work Experience' }}</h3>
-      <article>
-        {% for exp in work %}
+      <article>{% for exp in work %}
         <div class='job-title'>
-          <strong>{{ exp.role }}</strong><br>
-          {% if exp.website %}
-          <a href="{{ exp.website }}" target="_blank">{{ exp.company }}</a><br>
-          {% endif %} {% if exp.date %}
-          <span>{{ exp.date }}</span>
-          {% endif %} 
+          <strong>{{ exp.role }}</strong><br>{% if exp.website %}
+          <a href="{{ exp.website }}" target="_blank">{{ exp.company }}</a><br>{% endif %}{% if exp.date %}
+          <span>{{ exp.date }}</span>{% endif %}
        </div>
-        <div>
-          {% if exp.summary %}
-          <p>{{ exp.summary }}</p>
-          {% endif %}
-          {% if exp.highlights %}
-          <ul class="job-description">
-            {% for line in exp.highlights %}
-            <li>{{ h.md(line) }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </div>
-        {% endfor %}
+        <div>{% if exp.summary %}
+          <p>{{ exp.summary }}</p>{% endif %}{% if exp.highlights %}
+          <ul class="job-description">{% for line in exp.highlights %}
+            <li>{{ h.md(line) }}</li>{% endfor %}
+          </ul>{% endif %}
+        </div>{% endfor %}
       </article>
-    </section>
-    {% endif %}
-    {% if skills %}
+    </section>{% endif %}{% if skills %}
     <section>
       <h3>Skills</h3>
       <article>
-        <div class='skills'>
-          {% for area in skills %}
+        <div class='skills'>{% for area in skills %}
           <div class='column'>
             <h4>{{ area.area }}</h4>
-            <ul>
-              {% for skill in area.skills %}
-              <li>{{ skill }}</li>
-              {% endfor %}
+            <ul>{% for skill in area.skills %}
+              <li>{{ skill }}</li>{% endfor %}
             </ul>
-          </div>
-          {% endfor %}
+          </div>{% endfor %}
         </div>
       </article>
-    </section>
-    {% endif %}
-    {% if education %}
+    </section>{% endif %}{% if education %}
     <section>
       <h3>Education</h3>
-      <article>
-        {% for edu in education %}
+      <article>{% for edu in education %}
         <div class="school">
         <p>
           <strong>{{ edu.location }}</strong><br>
           <span>{{ edu.date }}</span><br>
           {{ edu.summary }}
         </p>
-        </div>
-        {% endfor %}
+        </div>{% endfor %}
       </article>
-    </section>
-    {% endif %}
-    {% if interests %}
+    </section>{% endif %}{% if interests %}
     <section>
       <h3>Personal Interests</h3>
       <article>
         <div class='interests'>
-          <ul>
-            {% for interest in interests %}
-            <li>{{ interest }}</li>
-            {% endfor %}
+          <ul>{% for interest in interests %}
+            <li>{{ interest }}</li>{% endfor %}
           </ul>
         </div>
       </article>
-    </section>
-    {% endif %}
-
+    </section>{% endif %}
   </main>
+
   <footer>
     <p>
       &copy; <script type="text/javascript">
 		  document.write(new Date().getFullYear());
 		  </script> {{ profile.name }} |
       Download
-	    <a href="/{{ config.pdf_file }}" download="{{ config.pdf_file }}">PDF</a>
-      {% if config.docx_file %}
+	    <a href="/{{ config.pdf_file }}" download="{{ config.pdf_file }}">PDF</a>{% if config.docx_file %}
       or 
-      <a href="{{ config.docx_file }}" download="{{ config.docx_file }}">DOCX</a>
-      {% endif %} |
+      <a href="{{ config.docx_file }}" download="{{ config.docx_file }}">DOCX</a>{% endif %} |
       <a href="/" onclick="window.print();">Print</a> |
       <a href="#">Top</a>
     </p>
