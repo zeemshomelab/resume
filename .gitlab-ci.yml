@@ -45,7 +45,7 @@ Buildx and Push:
     - name: docker:20.10-dind
       command: ["--experimental"]
   before_script:
-    - export BUILDX_VERSION="v0.5.0"
+    - export BUILDX_VERSION="v0.5.1"
     - mkdir -p ~/.docker/cli-plugins
     - wget -O ~/.docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/$BUILDX_VERSION/buildx-$BUILDX_VERSION.linux-amd64"
     - chmod a+x ~/.docker/cli-plugins/docker-buildx
