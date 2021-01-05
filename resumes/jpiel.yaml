@@ -67,7 +67,6 @@ work:
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
       date: May 2018 - October 2020
-      summary: LASP's vision is to maintain world-leadership status in identifying and addressing key questions in planetary science, space physics, solar influences, and atmospheric science.
       highlights:
         - Migrated SSO web authentication stack from Shibboleth to Keycloak for dozens of internal and external websites. Created and managed clients and groups by leveraging Keycloak specific modules in Ansible.
         - Defined and implemented automation routines for the lab. Worked with various teams internally and externally to understand their needs and steer them towards modern DevOps methodologies.
