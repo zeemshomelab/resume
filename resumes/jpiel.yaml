@@ -7,7 +7,7 @@ profile:
         I am a Senior DevOps Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
         It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
     image: "https://i.imgur.com/J5O8Eo8.jpg"
-    website: https://jordanpiel.net
+    website: https://jordan.piel.vip
 
     networks:
         - provider: github
