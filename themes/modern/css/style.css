@@ -78,7 +78,7 @@ main section:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
-.fab {
+.fab, .far, .fas {
   border: 1px solid white;
   border-radius: 50%;
   font-size: 1.5em;
@@ -89,18 +89,18 @@ main section:not(:last-child) {
   text-align: center;
 }
 
-a .fab {
+a .fab, .far, .fas {
   color: white;
 }
 
-.skills {
+.skills, .contact {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-.skills .column {
+.skills .column, .contact .column {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;

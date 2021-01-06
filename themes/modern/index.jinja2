@@ -34,7 +34,16 @@
       <p>{{ profile.summary }}</p>{% for network in profile.networks %}
         <a href="{{ network.url }}" target="_blank">
           <i class="fab fa-{{ network.provider }}"></i>
-        </a>{% endfor %}
+        </a>{% endfor %}{% if profile.email %}
+        <a href="mailto:{{ profile.email }}" target="_blank">
+          <i class="far fa-envelope"></i>
+        </a>{% endif %}{% if profile.phone %}
+        <a href="tel:{{ profile.phone }}" target="_blank">
+          <i class="fas fa-phone"></i>
+        </a>{% endif %}{% if profile.address %}
+        <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>{% endif %}
     </section>
   </header>
   
@@ -46,7 +55,7 @@
           <strong>{{ exp.role }}</strong><br>{% if exp.website %}
           <a href="{{ exp.website }}" target="_blank">{{ exp.company }}</a><br>{% endif %}{% if exp.date %}
           <span>{{ exp.date }}</span>{% endif %}
-       </div>
+        </div>
         <div>{% if exp.summary %}
           <p>{{ exp.summary }}</p>{% endif %}{% if exp.highlights %}
           <ul class="job-description">{% for line in exp.highlights %}
@@ -72,11 +81,11 @@
       <h3>Education</h3>
       <article>{% for edu in education %}
         <div class="school">
-        <p>
-          <strong>{{ edu.location }}</strong><br>
-          <span>{{ edu.date }}</span><br>
-          {{ edu.summary }}
-        </p>
+          <p>
+            <strong>{{ edu.location }}</strong><br>
+            <span>{{ edu.date }}</span><br>
+            {{ edu.summary }}
+          </p>
         </div>{% endfor %}
       </article>
     </section>{% endif %}{% if interests %}
@@ -90,6 +99,43 @@
         </div>
       </article>
     </section>{% endif %}
+    <section>
+      <h3>Contact Information</h3>
+      <article>
+        <div class='contact'>
+          <div class='column'>
+            <h4>Email:</h4>
+            <dd>
+              <a href="mailto:{{ profile.email }}">
+                {{ profile.email }}
+              </a>
+            </dd>
+          </div>{% if profile.phone %}
+          <div class='column'>
+            <h4>Phone:</h4>
+            <dd>
+              <a href="tel:{{ profile.phone }}">
+                {{ profile.phone }}
+              </a></dd>
+          </div>{% endif %}
+          <div class='column'>
+            <h4>Address:</h4>
+            <dd>
+              <a href="https://maps.google.com/?q={{ profile.website }}" target="_blank">
+                {{ profile.address }}
+              </a></dd>
+          </div>{% if profile.website %}
+          <div class='column'>
+            <h4>Website:</h4>
+            <dd>
+              <a href="{{ profile.website }}">
+                {{ profile.website }}
+              </a>
+            </dd>
+          </div>{% endif %}
+        </div>
+      </article>
+    </section>
   </main>
 
   <footer>
