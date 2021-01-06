@@ -34,7 +34,16 @@
       <p>{{ profile.summary }}</p>{% for network in profile.networks %}
         <a href="{{ network.url }}" target="_blank">
           <i class="fab fa-{{ network.provider }}"></i>
-        </a>{% endfor %}
+        </a>{% endfor %}{% if profile.email %}
+        <a href="mailto:{{ profile.email }}" target="_blank">
+          <i class="far fa-envelope"></i>
+        </a>{% endif %}{% if profile.phone %}
+        <a href="tel:{{ profile.phone }}" target="_blank">
+          <i class="fas fa-phone"></i>
+        </a>{% endif %}{% if profile.address %}
+        <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>{% endif %}
     </section>
   </header>
   
@@ -46,7 +55,7 @@
           <strong>{{ exp.role }}</strong><br>{% if exp.website %}
           <a href="{{ exp.website }}" target="_blank">{{ exp.company }}</a><br>{% endif %}{% if exp.date %}
           <span>{{ exp.date }}</span>{% endif %}
-       </div>
+        </div>
         <div>{% if exp.summary %}
           <p>{{ exp.summary }}</p>{% endif %}{% if exp.highlights %}
           <ul class="job-description">{% for line in exp.highlights %}
