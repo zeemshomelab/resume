@@ -40,6 +40,9 @@
         </a>{% endif %}{% if profile.phone %}
         <a href="tel:{{ profile.phone }}" target="_blank">
           <i class="fas fa-phone"></i>
+        </a>{% endif %}{% if profile.address %}
+        <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
+          <i class="fas fa-map-marker-alt"></i>
         </a>{% endif %}
     </section>
   </header>
