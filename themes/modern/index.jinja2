@@ -104,34 +104,36 @@
       <article>
         <div class='contact'>
           <div class='column'>
-            <h4>Email:</h4>
-            <dd>
-              <a href="mailto:{{ profile.email }}">
-                {{ profile.email }}
-              </a>
-            </dd>
+            <p>
+              <strong>Email: </strong>
+                <a href="mailto:{{ profile.email }}">
+                  {{ profile.email }}
+                </a>
+            </p>
           </div>{% if profile.phone %}
           <div class='column'>
-            <h4>Phone:</h4>
-            <dd>
-              <a href="tel:{{ profile.phone }}">
-                {{ profile.phone }}
-              </a></dd>
+            <p>
+              <strong>Phone: </strong>
+                <a href="tel:{{ profile.phone }}">
+                  {{ profile.phone }}
+                </a>
+            </p>
           </div>{% endif %}
           <div class='column'>
-            <h4>Address:</h4>
-            <dd>
-              <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
-                {{ profile.address }}
-              </a></dd>
+            <p>
+              <strong>Address: </strong>
+                <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
+                  {{ profile.address }}
+                </a>
+            </p>
           </div>{% if profile.website %}
           <div class='column'>
-            <h4>Website:</h4>
-            <dd>
-              <a href="{{ profile.website }}">
-                {{ profile.website }}
-              </a>
-            </dd>
+            <p>
+              <strong>Website: </strong>
+                <a href="{{ profile.website }}">
+                  {{ profile.website }}
+                </a>
+            </p>
           </div>{% endif %}
         </div>
       </article>
