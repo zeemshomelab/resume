@@ -32,16 +32,16 @@
     </section>
     <section>
       <p>{{ profile.summary }}</p>{% for network in profile.networks %}
-        <a href="{{ network.url }}" target="_blank">
+        <a href="{{ network.url }}" aria-label="{{ network.provider }}" target="_blank" rel="noreferrer">
           <i class="fab fa-{{ network.provider }}"></i>
         </a>{% endfor %}{% if profile.email %}
-        <a href="mailto:{{ profile.email }}" target="_blank">
+        <a href="mailto:{{ profile.email }}" aria-label="email" target="_blank" rel="noreferrer">
           <i class="far fa-envelope"></i>
         </a>{% endif %}{% if profile.phone %}
-        <a href="tel:{{ profile.phone }}" target="_blank">
+        <a href="tel:{{ profile.phone }}" aria-label="phone" target="_blank" rel="noreferrer">
           <i class="fas fa-phone"></i>
         </a>{% endif %}{% if profile.address %}
-        <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
+        <a href="https://maps.google.com/?q={{ profile.address }}" aria-label="location" target="_blank" rel="noreferrer">
           <i class="fas fa-map-marker-alt"></i>
         </a>{% endif %}
     </section>
@@ -53,7 +53,7 @@
       <article>{% for exp in work %}
         <div class='job-title'>
           <strong>{{ exp.role }}</strong><br>{% if exp.website %}
-          <a href="{{ exp.website }}" target="_blank">{{ exp.company }}</a><br>{% endif %}{% if exp.date %}
+          <a href="{{ exp.website }}" target="_blank" rel="noreferrer">{{ exp.company }}</a><br>{% endif %}{% if exp.date %}
           <span>{{ exp.date }}</span>{% endif %}
         </div>
         <div>{% if exp.summary %}
@@ -122,7 +122,7 @@
           <div class='column'>
             <p>
               <strong>Address: </strong>
-                <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank">
+                <a href="https://maps.google.com/?q={{ profile.address }}" target="_blank" rel="noreferrer">
                   {{ profile.address }}
                 </a>
             </p>
