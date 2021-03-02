@@ -27,18 +27,18 @@ skills:
     - area: Orchestration / Management
       skills:
         - Ansible / Puppet / Terraform
-        - Log Aggregation, Metrics with Splunk / CloudWatch
-        - Gitlab CI / Jenkins
+        - Gitlab CI / Github Actions / Jenkins
+        - CloudWatch / Splunk
     - area: Databases
       skills:
         - PostgreSQL
         - MariaDB / MySQL
         - MS SQL
-    - area: Web Delivery / Caching / HA
+    - area: Web Delivery / Caching / Load Balancing
       skills:
         - Apache / Nginx / Traefik
-        - Redis / Mongo / Memcached
-        - HAProxy / ELB
+        - Redis / Memcached
+        - ALB / ELB / HAProxy
     - area: Programming / Tools
       skills:
         - Python / Bash
@@ -48,12 +48,12 @@ skills:
       skills:
         - DNS / DHCP
         - LAN / WAN / VLAN / VPC
-        - Firewalls / iptables / Security Groups
-    - area: Authentication
+        - Firewalls / iptables
+    - area: Authentication / Access Control
       skills:
         - LDAP / Active Directory
-        - Token / Cookie Management
-        - OIDC / OAuth2 / SAML2
+        - RBAC / ACL / Security Groups
+        - OIDC / OAuth2.0 / SAML2
     - area: Web Frameworks
       skills:
         - Django
@@ -89,7 +89,7 @@ work:
       website: https://www.ridgetopgroup.com/
       date: February 2011 - November 2011
       highlights:
-        - Built and configured Windows Deployment Services for quick network installations of Windows clients and all necessary software packages.
+        - Built and configured Windows Deployment Services for fast and repeatable network installations of Windows clients and software packages.
         - Deployed and configured internal project and issue tracking tool Trac.
         - Migrated file shares off individual external hard drives and on to dedicated hardware.
         - Responsible for vetting and purchasing technical hardware and software as needs arose.
