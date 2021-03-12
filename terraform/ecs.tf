@@ -89,7 +89,7 @@ resource "aws_ecs_service" "resume" {
   name             = "${local.prefix}-resume"
   cluster          = aws_ecs_cluster.main.name
   task_definition  = aws_ecs_task_definition.resume.family
-  desired_count    = 2
+  desired_count    = 1
   depends_on       = [aws_lb_listener.resume_https]
   platform_version = "1.4.0"
 
@@ -100,12 +100,13 @@ resource "aws_ecs_service" "resume" {
 
   network_configuration {
     subnets = [
-      aws_subnet.private_a.id,
-      aws_subnet.private_b.id,
+      aws_subnet.public_a.id,
+      aws_subnet.public_b.id,
     ]
     security_groups = [
       aws_security_group.ecs_service.id,
     ]
+    assign_public_ip = true
   }
 
   load_balancer {
