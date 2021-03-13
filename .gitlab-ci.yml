@@ -110,7 +110,7 @@ Stage Destroy:
     - terraform destroy -auto-approve
   only:
     variables:
-      - $ENVIRONMENT_DESTROY == "True"
+      - $STAGE_DESTROY == "True"
 
 Production Destroy:
   stage: Destroy
@@ -121,4 +121,4 @@ Production Destroy:
     - terraform destroy -auto-approve
   only:
     variables:
-      - $ENVIRONMENT_DESTROY == "True"
+      - $PRODUCTION_DESTROY == "True"
