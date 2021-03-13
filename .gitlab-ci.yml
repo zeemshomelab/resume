@@ -7,7 +7,6 @@ image:
 stages:
   - Test and Lint
   - Build and Push
-  - Buildx and Push
   - Stage Plan
   - Stage Apply
   - Production Plan
@@ -79,7 +78,6 @@ Stage Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "stage"'
-      when: manual
 
 Production Plan:
   stage: Production Plan
@@ -102,7 +100,6 @@ Production Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
-      when: manual
 
 Stage Destroy:
   stage: Destroy
@@ -111,9 +108,9 @@ Stage Destroy:
     - terraform init
     - terraform workspace select stage
     - terraform destroy -auto-approve
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "stage"'
-      when: manual
+  only:
+    variables:
+      - $ENVIRONMENT_DESTROY == "True"
 
 Production Destroy:
   stage: Destroy
@@ -124,4 +121,4 @@ Production Destroy:
     - terraform destroy -auto-approve
   only:
     variables:
-      - $PRODUCTION_DESTROY == "True"
+      - $ENVIRONMENT_DESTROY == "True"
