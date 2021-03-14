@@ -50,15 +50,6 @@ resource "aws_route" "public_internet_access_a" {
   gateway_id             = aws_internet_gateway.main.id
 }
 
-resource "aws_eip" "public_a" {
-  vpc = true
-
-  tags = merge(
-    local.common_tags,
-    map("Name", "${local.prefix}-public-a")
-  )
-}
-
 resource "aws_subnet" "public_b" {
   cidr_block              = "10.1.2.0/24"
   map_public_ip_on_launch = true
@@ -89,13 +80,4 @@ resource "aws_route" "public_b" {
   route_table_id         = aws_route_table.public_b.id
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.main.id
-}
-
-resource "aws_eip" "public_b" {
-  vpc = true
-
-  tags = merge(
-    local.common_tags,
-    map("Name", "${local.prefix}-public-b")
-  )
 }
