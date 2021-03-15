@@ -2,8 +2,8 @@ resource "aws_lb" "resume" {
   name               = "${local.prefix}-main"
   load_balancer_type = "application"
   subnets = [
-    aws_subnet.public_a.id,
-    aws_subnet.public_b.id,
+    aws_subnet.private_a.id,
+    aws_subnet.private_b.id,
   ]
 
   security_groups = [aws_security_group.lb.id]
@@ -75,13 +75,6 @@ resource "aws_security_group" "lb" {
     protocol    = "tcp"
     from_port   = 80
     to_port     = 80
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  egress {
-    protocol    = "tcp"
-    from_port   = 443
-    to_port     = 443
     cidr_blocks = ["0.0.0.0/0"]
   }
 
