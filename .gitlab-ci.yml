@@ -100,6 +100,7 @@ Production Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
+      when: manual
 
 Stage Destroy:
   stage: Destroy
