@@ -1,5 +1,5 @@
 image:
-  name: hashicorp/terraform:0.14.7
+  name: hashicorp/terraform:0.14.8
   entrypoint:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
@@ -7,11 +7,9 @@ image:
 stages:
   - Test and Lint
   - Build and Push
-  - Stage Plan
-  - Stage Apply
-  - Production Plan
-  - Production Apply
-  - Destroy
+  - Terraform Plan
+  - Terraform Apply
+  - Terraform Destroy
 
 Validate Terraform:
   stage: Test and Lint
@@ -56,9 +54,10 @@ Buildx and Push:
     - docker buildx build --platform linux/amd64,linux/arm64 -t $HUB_REPO:$DATE -t $HUB_REPO:latest . --push
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
+  allow_failure: true
 
 Stage Plan:
-  stage: Stage Plan
+  stage: Terraform Plan
   script:
     - cd terraform/
     - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
@@ -69,7 +68,7 @@ Stage Plan:
     - if: '$CI_COMMIT_BRANCH == "stage"'
 
 Stage Apply:
-  stage: Stage Apply
+  stage: Terraform Apply
   script:
     - cd terraform/
     - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
@@ -80,7 +79,7 @@ Stage Apply:
     - if: '$CI_COMMIT_BRANCH == "stage"'
 
 Production Plan:
-  stage: Production Plan
+  stage: Terraform Plan
   script:
     - cd terraform/
     - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
@@ -91,7 +90,7 @@ Production Plan:
     - if: '$CI_COMMIT_BRANCH == "master"'
 
 Production Apply:
-  stage: Production Apply
+  stage: Terraform Apply
   script:
     - cd terraform/
     - export TF_VAR_ecr_image_resume=$ECR_REPO:$CI_COMMIT_SHORT_SHA
@@ -103,7 +102,7 @@ Production Apply:
       when: manual
 
 Stage Destroy:
-  stage: Destroy
+  stage: Terraform Destroy
   script:
     - cd terraform/
     - terraform init
@@ -114,7 +113,7 @@ Stage Destroy:
       - $STAGE_DESTROY == "True"
 
 Production Destroy:
-  stage: Destroy
+  stage: Terraform Destroy
   script:
     - cd terraform/
     - terraform init
