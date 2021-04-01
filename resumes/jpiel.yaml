@@ -1,10 +1,10 @@
 profile:
     name: Jordan Piel
-    label: Senior DevOps Engineer
+    label: Site Reliability Engineer
     email: jpiel.devops@gmail.com
     address: Westminster, CO
     summary: >
-        I am a Senior DevOps Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
+        I am a Site Reliability Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
         It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
     # image: "https://i.imgur.com/J5O8Eo8.jpg"
     networks:
@@ -15,8 +15,8 @@ profile:
           username: jpiel
           url: https://gitlab.com/jpiel
         - provider: linkedin
-          username: JBenPiel
-          url: https://www.linkedin.com/in/JBenPiel
+          username: jpiel
+          url: https://www.linkedin.com/in/jpiel
 
 skills:
     - area: Platforms
@@ -28,7 +28,7 @@ skills:
       skills:
         - Ansible / Puppet / Terraform
         - Gitlab CI / Github Actions / Jenkins
-        - CloudWatch / Splunk
+        - CloudWatch / DataDog / Splunk
     - area: Databases
       skills:
         - PostgreSQL
@@ -61,6 +61,12 @@ skills:
         - Ruby on Rails
 
 work:
+    - company: Mariana Tek by Xplor
+      role: Site Reliability Engineer
+      website: https://marianatek.com
+      date: March 2021 - Present
+      highlights:
+        - Design and implement serverless application architecture within AWS using Terraform.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
@@ -84,15 +90,6 @@ work:
         - Leveraged Vagrant to provision local development environments that supplied developers with a pre-build Django project that replicates production web applications.
         - Configured group policies with PowerShell for software package deployments providing support to the 300+ employees in the Financial Services department.
         - Spearheaded migrating of web services to an AWS VPC.
-    - company: Ridgetop Group Inc.
-      role: IT Technician
-      website: https://www.ridgetopgroup.com/
-      date: February 2011 - November 2011
-      highlights:
-        - Built and configured Windows Deployment Services for fast and repeatable network installations of Windows clients and software packages.
-        - Deployed and configured internal project and issue tracking tool Trac.
-        - Migrated file shares off individual external hard drives and on to dedicated hardware.
-        - Responsible for vetting and purchasing technical hardware and software as needs arose.
 
 education:
     - location: University of Arizona, Tucson, AZ

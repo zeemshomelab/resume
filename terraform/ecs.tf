@@ -1,6 +1,10 @@
 resource "aws_ecs_cluster" "main" {
   name               = "${local.prefix}-cluster"
   capacity_providers = ["FARGATE", "FARGATE_SPOT"]
+  setting {
+    name  = "containerInsights"
+    value = "enabled"
+  }
 
   tags = local.common_tags
 }
