@@ -1,5 +1,5 @@
 image:
-  name: hashicorp/terraform:0.14.9
+  name: hashicorp/terraform:0.15.1
   entrypoint:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
@@ -16,7 +16,7 @@ Validate Terraform:
   script:
     - cd terraform/
     - terraform init -backend=false
-    - terraform init validate
+    - terraform validate
     - terraform fmt -check
   rules:
     - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^(master|stage)$/ || $CI_COMMIT_BRANCH =~ /^(master|stage)$/'
