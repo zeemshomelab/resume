@@ -4,7 +4,7 @@ profile:
     email: jpiel.devops@gmail.com
     address: Westminster, CO
     summary: >
-        I am a Site Reliability Engineer bringing 10 years of experience designing infrastructure and successfully supporting many production workloads and technologies.
+        I am a Site Reliability Engineer with over a decade of experience designing infrastructure and successfully supporting many production workloads and technologies.
         It is my passion helping a team solve complex problems by breaking down complicated ideas to their essence and making their processes easier through automation, reliability, and repeatability.
     # image: "https://i.imgur.com/J5O8Eo8.jpg"
     networks:
@@ -61,12 +61,10 @@ skills:
         - Ruby on Rails
 
 work:
-    - company: Mariana Tek by Xplor
+    - company: Boutique Fitness by Xplor
       role: Site Reliability Engineer
-      website: https://marianatek.com
+      website: https://www.xplortechnologies.com/
       date: March 2021 - Present
-      highlights:
-        - Design and implement serverless application architecture within AWS using Terraform.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
