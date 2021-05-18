@@ -65,6 +65,8 @@ work:
       role: Site Reliability Engineer
       website: https://www.xplortechnologies.com/
       date: March 2021 - Present
+      highlights:
+        - Design and implement serverless application architecture within AWS using Terraform.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
