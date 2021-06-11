@@ -1,3 +1,30 @@
+data "aws_iam_policy_document" "assume_role_policy" {
+  version = "2012-10-17"
+  statement {
+    actions = ["sts:AssumeRole"]
+
+    principals {
+      type        = "Service"
+      identifiers = ["ecs-tasks.amazonaws.com"]
+    }
+  }
+}
+
+data "aws_iam_policy_document" "task_exec_policy" {
+  version = "2012-10-17"
+  statement {
+    actions = [
+      "ecr:GetAuthorizationToken",
+      "ecr:BatchCheckLayerAvailability",
+      "ecr:GetDownloadUrlForLayer",
+      "ecr:BatchGetImage",
+      "logs:CreateLogStream",
+      "logs:PutLogEvents"
+    ]
+    resources = ["*"]
+  }
+}
+
 resource "aws_ecs_cluster" "main" {
   name               = "${local.prefix}-cluster"
   capacity_providers = ["FARGATE", "FARGATE_SPOT"]
@@ -13,12 +40,12 @@ resource "aws_iam_policy" "task_execution_role_policy" {
   name        = "${local.prefix}-task-exec-role-policy"
   path        = "/"
   description = "Allow retrieving images and adding to logs"
-  policy      = file("./templates/ecs/task-exec-role.json")
+  policy      = data.aws_iam_policy_document.task_exec_policy.json
 }
 
 resource "aws_iam_role" "task_execution_role" {
   name               = "${local.prefix}-task-exec-role"
-  assume_role_policy = file("./templates/ecs/assume-role-policy.json")
+  assume_role_policy = data.aws_iam_policy_document.assume_role_policy.json
 
   tags = local.common_tags
 }
@@ -30,7 +57,7 @@ resource "aws_iam_role_policy_attachment" "task_execution_role" {
 
 resource "aws_iam_role" "app_iam_role" {
   name               = "${local.prefix}-resume-task"
-  assume_role_policy = file("./templates/ecs/assume-role-policy.json")
+  assume_role_policy = data.aws_iam_policy_document.assume_role_policy.json
 
   tags = local.common_tags
 }
