@@ -7,7 +7,7 @@ variable "project" {
 }
 
 variable "contact" {
-  default = "JBenPiel@gmail.com"
+  default = "jpiel.devops@gmail.com"
 }
 
 variable "ecr_image_resume" {
