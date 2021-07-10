@@ -67,6 +67,8 @@ work:
       date: March 2021 - Present
       highlights:
         - Design and implement serverless application architecture within AWS using Terraform.
+        - Deploy container applications to ECS with CodePipeline and green/blue deployments.
+        - Using priciple of least priviledge with multiple accounts and roles to manage service and user access.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
