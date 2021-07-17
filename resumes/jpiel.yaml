@@ -23,7 +23,7 @@ skills:
       skills:
         - Docker / Vagrant
         - Linux / Windows
-        - VMWare / AWS / GCP
+        - AWS / GCP / VMWare
     - area: Orchestration / Management
       skills:
         - Ansible / Puppet / Terraform
@@ -41,7 +41,7 @@ skills:
         - ALB / ELB / HAProxy
     - area: Programming / Tools
       skills:
-        - Python / Bash
+        - Bash / Python
         - Java / PHP
         - Git / SVN
     - area: Networking
@@ -51,8 +51,8 @@ skills:
         - Firewalls / iptables
     - area: Authentication / Access Control
       skills:
+        - ACL / RBAC / Security Groups
         - LDAP / Active Directory
-        - RBAC / ACL / Security Groups
         - OIDC / OAuth2.0 / SAML2
     - area: Web Frameworks
       skills:
@@ -66,9 +66,10 @@ work:
       website: https://www.xplortechnologies.com/
       date: March 2021 - Present
       highlights:
-        - Design and implement serverless application architecture within AWS using Terraform.
-        - Deploy container applications to ECS with CodePipeline and green/blue deployments.
-        - Using priciple of least priviledge with multiple accounts and roles to manage service and user access.
+        - High level of collaboration between team members leveraging Terraform to drive infrastructure as code across multiple VPC's.
+        - Design and implement serverless application architecture within AWS.
+        - Deploy applications to ECS clusters with CodePipeline and green/blue deployments.
+        - Use priciple of least priviledge with multiple accounts and roles to manage service and user access.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
