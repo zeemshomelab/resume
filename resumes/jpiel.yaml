@@ -27,7 +27,7 @@ skills:
     - area: Orchestration / Management
       skills:
         - Ansible / Puppet / Terraform
-        - Gitlab CI / Github Actions / Jenkins
+        - Circle CI / Gitlab CI / Github Actions
         - CloudWatch / DataDog / Splunk
     - area: Databases
       skills:
@@ -67,8 +67,8 @@ work:
       date: March 2021 - Present
       highlights:
         - High level of collaboration between team members leveraging Terraform to drive infrastructure as code across multiple VPC's.
-        - Design and implement serverless application architecture within AWS.
         - Deploy applications to ECS clusters with CodePipeline and green/blue deployments.
+        - Design and implement serverless application architecture using API Gateway and Lambda.
         - Use priciple of least priviledge with multiple accounts and roles to manage service and user access.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
