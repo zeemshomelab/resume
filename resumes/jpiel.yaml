@@ -69,7 +69,7 @@ work:
         - High level of collaboration between team members leveraging Terraform to drive infrastructure as code across multiple VPC's.
         - Deploy applications to ECS clusters with CodePipeline and green/blue deployments.
         - Design and implement serverless application architecture using API Gateway and Lambda.
-        - Use priciple of least priviledge with multiple accounts and roles to manage service and user access.
+        - Use principle of least privilege with multiple accounts and roles to manage service and user access.
     - company: University of Colorado Boulder - Laboratory for Atmospheric and Space Physics
       role: Senior DevOps Engineer
       website: https://lasp.colorado.edu
