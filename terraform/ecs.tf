@@ -30,7 +30,7 @@ resource "aws_ecs_cluster" "main" {
   capacity_providers = ["FARGATE", "FARGATE_SPOT"]
   setting {
     name  = "containerInsights"
-    value = "enabled"
+    value = var.container_insights
   }
 
   tags = local.common_tags
