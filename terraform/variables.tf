@@ -10,6 +10,11 @@ variable "contact" {
   default = "jpiel.devops@gmail.com"
 }
 
+variable "container_insights" {
+  description = "Toggle ECS Container Insights on the cluster"
+  default     = "disabled"
+}
+
 variable "ecr_image_resume" {
   description = "ECR image for Resume"
   default     = "public.ecr.aws/e7k4f6o3/jordan-resume:latest"
