@@ -55,4 +55,4 @@ Example Themes:
 
 # License
 
-[MIT License](https://gitlab.com/jpiel/resume/-/blob/master/LICENSE)
+[GNU License](https://gitlab.com/jpiel/resume/-/blob/master/LICENSE)
