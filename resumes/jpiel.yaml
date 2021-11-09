@@ -64,7 +64,7 @@ work:
     - company: Fitness & Wellbeing by Xplor
       role: Site Reliability Engineer
       website: https://www.xplortechnologies.com/
-      date: March 2021 - Present
+      date: March 2021 - October 2021
       highlights:
         - High level of collaboration between team members leveraging Terraform to drive infrastructure as code across multiple VPC's.
         - Deploy applications to ECS clusters with CodePipeline and green/blue deployments.
