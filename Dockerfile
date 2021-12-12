@@ -14,4 +14,5 @@ RUN pip3 install --no-cache-dir -r requirements.txt && \
 # Output
 FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
+RUN echo "server_tokens off;" >> /etc/nginx/conf.d/default.conf
 EXPOSE 80
