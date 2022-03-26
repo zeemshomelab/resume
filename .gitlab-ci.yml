@@ -43,7 +43,7 @@ Buildx and Push:
     - name: docker:20.10-dind
       command: ["--experimental"]
   before_script:
-    - export BUILDX_VERSION="v0.6.3"
+    - export BUILDX_VERSION="v0.8.1"
     - mkdir -p ~/.docker/cli-plugins
     - wget -O ~/.docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/$BUILDX_VERSION/buildx-$BUILDX_VERSION.linux-amd64"
     - chmod a+x ~/.docker/cli-plugins/docker-buildx
@@ -97,6 +97,7 @@ Stage Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "stage"'
+      when: manual
 
 Production Plan:
   stage: Terraform Plan
@@ -119,6 +120,7 @@ Production Apply:
     - terraform apply -auto-approve
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
+      when: manual
 
 Stage Destroy:
   stage: Terraform Destroy
