@@ -1,12 +1,12 @@
 profile:
     name: Erin Piel
-    label: Project Manager
+    label: Agile Project Manager
     email: erin@piel.vip
     address: Westminster, CO
     summary: >
-        Experienced Project Manager, Business Analyst, and Advanced Certified Scrum Master with a passion for Agile and coaching teams.
+        Experienced Agile Project Manager, Business Analyst, and Advanced Certified Scrum Master with a passion for Agile and coaching teams.
         Skilled in Microsoft Office, Scrum/Agile Techniques, and various Project Management tools.
-    image: "https://i.imgur.com/Sc73zFB.jpg"
+    # image: "https://i.imgur.com/Sc73zFB.jpg"
     website: https://erin.piel.vip
     networks:
         - provider: github
@@ -23,6 +23,7 @@ skills:
         - Scrum
         - Kanban
         - XP
+        - SAFe
     - area: Coaching
       skills:
         - Excellent Written and Verbal Communication
@@ -34,25 +35,33 @@ skills:
         - PostgreSQL
     - area: Project Tracking Software
       skills:
-        - Pivotal Tracker
         - Jira
         - Confluence
-        - Redmine
+        - Pivotal Tracker
 
 work:
+    - company: Enervee
+      role: Agile Project Manager
+      website: https://www.enervee.com/
+      date: Oct. 2021 - Present
+      highlights:
+        - Agile Project Manager for frontend development team supporting e-commerce marketplaces encouraging consumers to choose more eco-friendly appliances
+        - Facilitate remote ceremonies; stand-ups, backlog refinement, sprint planning, scrum of scrums, and retrospective
+        - Collaborate routinely with Product Manager to ensure backlog is refined and ready for developers
+        - Program Increment (PI) Planning; schedule and facilitate story mapping and epic sizing, and ensure cross team dependencies are discovered and discussed
+        - Coached the team away from hours based velocity in to relative estimation resulting in more consistent planning and delivery of our sprint objectives
     - company: TrueCoach
       role: Project Manager
       website: https://truecoach.co
-      date: Feb. 2019 - Present
-      summary: TrueCoach is on a mission to help coaches save time, deliver a better experience for their clients, and grow their training businesses.
+      date: Feb. 2019 - Oct. 2021
       highlights:
-        - Project Manager and Scrum Master for multiple development teams building our app for the web, mobile web, iOS, and Android
-        - Coach and mentor a cross-function team of developers and designers to consistently deliver quality features to our apps
-        - Facilitate Project Kickoffs, Sprint Planning, Backlog Refinement, Retrospectives, Daily Standups, and other remote meetings
-        - Remove team impediments on a daily basis to allow the team to deliver the sprint goals and product increments
-        - Collaborate with members of the Product, Business, and Engineering teams to develop and maintain Product Backlogs
-        - Interact daily with the Customer Success team to triage bugs
-        - Create Initiative Lifecycle process - ensuring clarity to our entire organization what our developers are working on and what they will work on next
+        - Project Manager and Scrum Master for multiple development teams building apps for the web, mobile web, iOS, and Android
+        - Coached and mentored a cross-functional team of developers and designers to consistently deliver quality features to the apps
+        - Facilitated Project Kickoffs, Sprint Planning, Backlog Refinement, Retrospectives, Daily Standups, and other remote meetings
+        - Removed team impediments on a daily basis to allow the team to deliver the sprint goals and product increments
+        - Collaborated with members of the Product, Business, and Engineering teams to develop and maintain Product Backlogs
+        - Interacted daily with the Customer Success team to triage bugs
+        - Created Initiative Lifecycle process - ensuring clarity to our entire organization what our developers are working on and what they will work on next
         - Lead trainings on Scrum, Agile, Facilitation and Coaching, and team dynamics
     - company: University of Colorado Boulder - Office of Information Tecnology - Business Analysis and Solutions Architecture
       role: IT Business Analyst 
