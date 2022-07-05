@@ -4,9 +4,8 @@ profile:
     email: erin@piel.vip
     address: Westminster, CO
     summary: >
-        Experienced Agile Project Manager, Business Analyst, and Advanced Certified Scrum Master with a passion for Agile and coaching teams.
+        Experienced Project Manager, Business Analyst, and Advanced Certified Scrum Master with a passion for supporting teams.
         Skilled in Microsoft Office, Scrum/Agile Techniques, and various Project Management tools.
-    # image: "https://i.imgur.com/Sc73zFB.jpg"
     website: https://erin.piel.vip
     networks:
         - provider: github
@@ -45,56 +44,53 @@ work:
       website: https://www.enervee.com/
       date: Oct. 2021 - Present
       highlights:
-        - Agile Project Manager for frontend development team supporting e-commerce marketplaces encouraging consumers to choose more eco-friendly appliances
-        - Facilitate remote ceremonies; stand-ups, backlog refinement, sprint planning, scrum of scrums, and retrospective
-        - Collaborate routinely with Product Manager to ensure backlog is refined and ready for developers
-        - Program Increment (PI) Planning; schedule and facilitate story mapping and epic sizing, and ensure cross team dependencies are discovered and discussed
-        - Coached the team away from hours based velocity in to relative estimation resulting in more consistent planning and delivery of our sprint objectives
+        - Agile Project Manager for two cross-functional development teams supporting e-commerce marketplaces encouraging consumers to choose more eco-friendly appliances.
+        - Coached one team away from hours based velocity into relative estimation resulting in more consistent planning, a reliable say/do ratio,  and delivery of our sprint objectives.
+        - Analyzed data collected from users on our checkout process and created flow charts for an improved checkout experience integrating user journeys, designs, and API endpoints into one clear map.
+        - Facilitate Scrum of Scrums - allows engineers to discuss cross team dependencies weekly in order to address concerns before they arise.
+        - Facilitate remote ceremonies; stand-ups, backlog refinement, sprint planning, sprint review, and retrospective.
+        - Collaborate routinely with Product Managers to ensure backlogs are refined and ready for engineers.
     - company: TrueCoach
       role: Project Manager
       website: https://truecoach.co
       date: Feb. 2019 - Oct. 2021
       highlights:
-        - Project Manager and Scrum Master for multiple development teams building apps for the web, mobile web, iOS, and Android
-        - Coached and mentored a cross-functional team of developers and designers to consistently deliver quality features to the apps
-        - Facilitated Project Kickoffs, Sprint Planning, Backlog Refinement, Retrospectives, Daily Standups, and other remote meetings
-        - Removed team impediments on a daily basis to allow the team to deliver the sprint goals and product increments
-        - Collaborated with members of the Product, Business, and Engineering teams to develop and maintain Product Backlogs
-        - Interacted daily with the Customer Success team to triage bugs
-        - Created Initiative Lifecycle process - ensuring clarity to our entire organization what our developers are working on and what they will work on next
-        - Lead trainings on Scrum, Agile, Facilitation and Coaching, and team dynamics
+        - Project Manager and Scrum Master for two web development teams and one mobile development team building our app for the web, mobile web, iOS, and Android.
+        - Collaborated closely with our Android Engineer and Mobile Engineering Manager to set expectations on feature parity with the iOS app, set achievable timelines of betas and feature releases, and monitored feedback from customers.
+        - Established a bug severity process; this allowed Customer Support to quickly triage bugs, and secured commitments from the development teams on when a bug would start being worked on based on the severity.
+        - Created Project Lifecycle process; established clear definitions of what the various project statuses could entail and clearly communicated what status current projects were in.
+        - Facilitated Project Kickoffs, Sprint Planning, Backlog Refinement, Retrospectives, Daily Standups, and other remote meetings.
+        - Collaborated with members of the Product, Business, and Engineering teams to refine and maintain Product Backlogs.
+        - Created trainings on Scrum, Agile, facilitation and coaching, and team dynamics.
     - company: University of Colorado Boulder - Office of Information Tecnology - Business Analysis and Solutions Architecture
       role: IT Business Analyst 
       website: https://www.oit.colorado.edu
       date: Jul. 2018 - Feb. 2019
       highlights:
-        - New Student and Family Program online orientation transition to new online learning management system Canvas from D2L;
-        - Drafted functional specifications for enrollment, un-enrollment, and grade export
-        - Modeled current D2L process and future Canvas processes, highlighting changes when applicable
-        - Led efforts to resolve enrollment issues by communicating and coordinating with multiple departments
-        - Medical Services 3rd Party Insurance - project to accept five major insurance providers at the campus health clinic
-        - Ran weekly status meetings, reviewed progress, assisted with issues
-        - Analyzed list of 24,000+ student responses on their current insurance providers; utilizing excel tools such as pivot tables to recommend which five insurance companies would be most appropriate to partner with
-        - Met with various employees to model current processes, discussed implications of accepting new insurance carriers and how that would affect workloads and define future workflows
+        - Project lead for Medical Services department's initiative to accept new insurance providers at the campus health clinic;
+        - Analyzed list of 24,000+ student responses on their current insurance providers; utilizing excel tools such as pivot tables to recommend which five insurance companies would be most appropriate to partner with,
+        - Met with various employees to model current processes, discussed implications of accepting new insurance carriers and how that would affect workloads, and defined future workflows,
+        - Ran weekly status meetings, reviewed progress against committed timelines, and assisted with issues.
+        - Project lead for New Student and Family Program department’s transition to a new Learning Management System;
+        - Drafted functional specifications for enrollment, un-enrollment, and grade export,
+        - Modeled current D2L process and future Canvas processes, highlighting changes when applicable,
+        - Led efforts to resolve enrollment issues by communicating and coordinating with multiple departments.
     - company: University of Arizona - Financial Services Office - Initiatives and Outreach Team
       role: Business Analyst
       website: https://www.fso.arizona.edu
       date: Jun. 2016 - May 2018
       highlights:
-        - RenewIt - In house application developed to track renewable purchases
-        - Interviewed employees to gather requirements and map process flows
-        - Drafted functional specifications and user acceptance criteria based off of requirements
-        - Facilitated Scrum Activities including backlog refinement, sprint planning, daily stand-up, sprint review, and sprint retrospective
+        - Project Manager for RenewIt - in house application developed to track renewable purchases;
+        - Interviewed employees to gather requirements and map process flows,
+        - Drafted functional specifications and user acceptance criteria based off of requirements,
         - QA tested the application and facilitated User Acceptance Testing - created test scripts for users, duplicated bugs and reported bugs to developers
-        - Created user manual
-        - CardsOnline Implementation - SaaS implementation for University of Arizona's CatCard office ID management software
-        - Interviewed employees to gather requirements, map process flows and determine data flow of CatCard information to other campus departments
-        - Created requirements and nice-to-haves to send to potential vendors to request information regarding their software
-        - Main point of contact for all vendors - responded to both functional and technical inquiries
-        - Helped users review quotes and requirements responses to determine and select our new vendor
-        - Worked closely with CardsOnline project manager to plan project kick-off
-        - Worked with IT Manager to document data in and out of new system so campus can stay updated with current card information
-
+        - Created user manual.
+        - Project Manager for CardsOnline Implementation - new ID Management software for the University of Arizona's CatCard office;
+        - Interviewed employees to gather requirements,
+        - Created requirements and nice-to-haves to send to potential vendors to request information regarding their software,
+        - Main point of contact for all vendors - responded to both functional and technical inquiries,
+        - Helped users review quotes and requirements responses to determine and select the new vendor,
+        - Collaborated with the IT Manager to document what data from the card needed to be disseminated to various campus departments so students, staff, and faculty could have no interruption if issued a new card.
     - company: University of Arizona - Financial Services Office - Administration Team
       role:  Administrative Associate - Customer Service Manager 
       website: https://www.fso.arizona.edu
@@ -120,7 +116,6 @@ education:
       summary: High School Diploma
 
 interests:
-    - Scrum and Agile
     - Motorsports
     - Performing Arts
     - Hiking / Travel
