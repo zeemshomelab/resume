@@ -7,7 +7,7 @@ variable "project" {
 }
 
 variable "contact" {
-  default = "jpiel.devops@gmail.com"
+  default = "jordan@piel.vip"
 }
 
 variable "container_insights" {
@@ -22,7 +22,7 @@ variable "ecr_image_resume" {
 
 variable "dns_zone_name" {
   description = "Domain name"
-  default     = "jordanpiel.net"
+  default     = "piel.vip"
 }
 
 variable "subdomain" {
