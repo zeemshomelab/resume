@@ -26,14 +26,25 @@ data "aws_iam_policy_document" "task_exec_policy" {
 }
 
 resource "aws_ecs_cluster" "main" {
-  name               = "${local.prefix}-cluster"
-  capacity_providers = ["FARGATE", "FARGATE_SPOT"]
+  name = "${local.prefix}-cluster"
   setting {
     name  = "containerInsights"
     value = var.container_insights
   }
 
   tags = local.common_tags
+}
+
+resource "aws_ecs_cluster_capacity_providers" "ecs_cluster_capacity_provider" {
+  cluster_name = aws_ecs_cluster.main.name
+
+  capacity_providers = ["FARGATE", "FARGATE_SPOT"]
+
+  default_capacity_provider_strategy {
+    base              = 1
+    weight            = 100
+    capacity_provider = "FARGATE_SPOT"
+  }
 }
 
 resource "aws_iam_policy" "task_execution_policy" {

@@ -1,5 +1,5 @@
 image:
-  name: hashicorp/terraform:1.2.4
+  name: hashicorp/terraform:1.2.8
   entrypoint:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
@@ -43,7 +43,7 @@ Buildx and Push:
     - name: docker:20.10-dind
       command: ["--experimental"]
   before_script:
-    - export BUILDX_VERSION="v0.8.2"
+    - export BUILDX_VERSION="v0.9.1"
     - mkdir -p ~/.docker/cli-plugins
     - wget -O ~/.docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/$BUILDX_VERSION/buildx-$BUILDX_VERSION.linux-amd64"
     - chmod a+x ~/.docker/cli-plugins/docker-buildx

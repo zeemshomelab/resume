@@ -7,7 +7,7 @@ html5lib==1.1
 importlib-metadata==4.12.0
 Jinja2==3.1.2
 lxml==4.9.1
-Markdown==3.3.7
+Markdown==3.4.1
 MarkupSafe==2.1.1
 Pillow==9.2.0
 pycparser==2.21
@@ -16,5 +16,5 @@ PyYAML==6.0
 six==1.16.0
 tinycss2==1.1.1
 typing-extensions==4.3.0
-WeasyPrint==55.0
-zipp==3.8.0
+WeasyPrint==56.1
+zipp==3.8.1
