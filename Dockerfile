@@ -1,4 +1,4 @@
-FROM python:3.10 as build
+FROM python:3.11 as build
 
 ARG RESUME
 
