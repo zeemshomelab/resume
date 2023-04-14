@@ -38,15 +38,15 @@ pipeline{
                     
                 }
        } 
-            stage('Build Docker Image'){
+        stage('Build Docker Image'){
             steps{
         
                  sh 'docker-compose build --build-arg RESUME=mshade.yaml'
                  
                 //  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
-                sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx:latest'
-                sh 'docker rmi minyx-resume_resume:latest '
-                sh 'docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi'
+                 sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx:latest'
+                 sh 'docker rmi minyx-resume_resume:latest '
+                 sh 'docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi'
 
                     
                 }
