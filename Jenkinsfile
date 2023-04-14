@@ -38,6 +38,14 @@ pipeline{
                     
                 }
             }
+            stage('Build Docker Image'){
+            steps{
+        
+                 sh 'docker-compose build --build-arg RESUME=mshade.yaml'
 
+                 sh 'docker-compose up -d' 
+                    
+                }
+            }
+        }
     }
-}
