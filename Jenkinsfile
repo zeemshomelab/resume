@@ -46,8 +46,8 @@ pipeline{
                 //  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
                 sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx:latest'
                 sh 'docker rmi minyx-resume_resume:latest '
-                sh 'docker images -a'
-                sh 'docker rmi $(docker images -a -q)'
+                
+                sh 'docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi'
 
                     
                 }
