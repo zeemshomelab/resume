@@ -42,6 +42,7 @@ pipeline{
             steps{
         
                  sh 'docker-compose build --build-arg RESUME=mshade.yaml'
+                 sh 'docker tag zeemlinux/minyx'
 
                     
                 }
