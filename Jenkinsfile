@@ -30,7 +30,7 @@ pipeline{
                 }
             }
         }
-        stage('Build Docker Image'){
+        stage('Docker Check Version'){
             steps{
         
                  sh 'docker --version'  
