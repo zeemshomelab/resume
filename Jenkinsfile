@@ -5,7 +5,7 @@ pipeline{
 
     environment{
         DOCKERHUB_USERNAME = "zeemlinux"
-        APP_NAME = "minyx"
+        APP_NAME = ""
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKERHUB_USERNAME}" + "/" + "${APP_NAME}"
         REGISTRY_CREDS = 'dockertoken'
