@@ -49,9 +49,9 @@ pipeline{
                 //  sh 'docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi'
                 }
             }
-            stage('Delete all Images'){
+            stage('push Docker Images'){
             steps{
-                  docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi
+                 sh 'docker push zeemlinux/minyx:latest'
                 }
             }
         }
