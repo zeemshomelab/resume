@@ -6,7 +6,7 @@ pipeline{
         stage('Checkout Workspace'){
             steps{
                 script{
-                    cleanWs
+                    cleanWs()
 
                 }
             }
