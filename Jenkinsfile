@@ -48,11 +48,16 @@ pipeline{
                  sh 'docker rmi minyx-resume_resume:latest '
                 //  sh 'docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi'
                 }
-            }
-            stage('push Docker Images'){
+        }
+        stage('Push Docker Image'){
             steps{
-                 sh 'docker push zeemlinux/minyx:latest'
+                script{
+                    docker.withRegistry('',REGISTRY_CREDS){
+                      sh 'docker push zeemlinux/minyx:latest' 
+                    }
                 }
             }
         }
+            
     }
+}
