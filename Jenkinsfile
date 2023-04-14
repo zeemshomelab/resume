@@ -43,7 +43,6 @@ pipeline{
         
                  sh 'docker-compose build --build-arg RESUME=mshade.yaml'
 
-                 sh 'docker-compose up -d' 
                     
                 }
             }
