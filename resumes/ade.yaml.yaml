@@ -1,0 +1,199 @@
+profile:
+    name: Adetoro Rafiu
+    label: DevOps Engineer
+    email: iarafiu01@gmail.com
+    #    phone: 571.327.8964
+    address: Nottingham, MD
+    summary: >
+        I am a DevOps engineer with a passion for automation,
+        reliability, and solving complex problems simply. I love to glue things together to
+        make everyone's job easier. I take pride in communicating effectively to audiences of all types,
+        distilling complex ideas down to their essence. I bring more than 10 years of experience designing
+        infrastructure and successfully supporting many kinds of production workloads and technologies.
+
+    # image: "https://avatars0.githubusercontent.com/u/393545?v=2&s=460"
+    website: https://arafiu.zeemshomelab.com/
+
+    networks:
+        -   provider: github
+            username: zeeminah
+            url: https://github.com/zeeminah
+
+        -   provider: linkedin
+            username:
+            url: https://www.linkedin.com/in/
+
+skills:
+    - area: Platforms
+      skills:
+        - Kubernetes / Docker Swarm
+        - Docker
+        - CICD, automation
+        - Linux of all breeds
+        - Vagrant / KVM / VMWare
+        - AWS / GCP / Rackspace Cloud
+    - area: Orchestration / Management
+      skills:
+        - SaltStack / Puppet
+        - CloudFormation / Salt Cloud
+        - Log Aggregation, Metrics with Splunk / GrayLog / CloudWatch
+        - Datadog / Prometheus
+        - Jenkins CICD
+    - area: Databases
+      skills:
+        - MySQL / PostgreSQL
+        - ElasticSearch
+        - Apache Solr
+        - RDS
+    - area: Caching / HA / Delivery
+      skills:
+        - Varnish / Nginx / Apache
+        - Redis / Memcached / ElastiCache
+        - HAProxy / ELB / ALB
+        - 'CDNs: CloudFlare / Fastly / CloudFront'
+
+    - area: Programming / Tools
+      skills:
+        - Python
+        - Bash
+        - Perl
+        - PHP
+        - Git / Source Control
+
+    - area: Foundational
+      skills:
+        - DNS / Route53
+        - SMTP / SES
+        - LAN / WAN Networking / VPC
+        - Firewalls / iptables / Security Groups
+
+work:
+    -   company: Select Data LLC
+        role: Devops Engineer
+        website: https://fool.com
+        date: June 2018 - Present
+        summary: Helping make the world smarter, happier, and richer
+        highlights:
+          - Develop and support CI/CD processes for deployment of Python and .NET Core Apps
+          - Manage, develop, and support Kubernetes / Docker / Linux / .NET hosting infrastructure
+          - Containerize existing and automate creation of new projects
+          - Help our developers work smarter, faster, and more effectively
+          - Manage our customer facing web infrastructure from edge to edge to provide content to Fools all over the world
+    -   company: Forum One
+        role: Sr. System Administrator
+        website: https://forumone.com
+        date: April 2011 - June 2018
+        summary: A full-service web design and technology consulting firm
+        highlights:
+          - >
+              Design highly available, scalable infrastructure for PHP / Python / Django / Node / Docker-based applications
+              on AWS
+          - Decrease time required to manage, deploy, and maintain infrastructure with CloudFormation, SaltStack, and Puppet
+          - Develop and support workflow with Docker and Vagrant for continuous delivery pipeline via Jenkins
+          - Participate in agile Scrum development methodology
+          - Advise clients on infrastructure management, planning, and scaling
+          - Provide solution guidance to business development team
+          - Client-facing support, consulting, and incident response
+          - Manage internal IT staff, provide career development mentorship, and technical guidance
+
+    -   company: Forum One
+        role: System Administrator
+        date: April 2007 - April 2011
+        highlights:
+          - Supported cloud and dedicated infrastructure for hosting of Drupal / Wordpress / PHP sites
+          - Participated in on-call rotation
+          - Managed dedicated and cloud servers
+          - Vendor management
+          - Managed internal IT operations
+
+    -   company: Omniplex World Services Corporation
+        role: Technical Support Specialist
+        date: March 2006 - April 2007
+        website: http://www.omniplex.com/
+        summary: >
+            Provider of investigative services to public and private sector
+            agencies nationwide
+        highlights:
+            - Supported secure operations of country-wide fleet of IT systems
+            - Help Desk support
+            - IT lifecycle support and management
+
+projects:
+
+    -   name: Peace Corps
+        role: Infrastructure Design, Administration
+        website: https://www.peacecorps.gov/
+        date: 2016 - Present
+        summary: Django / Wagtail CMS application hosting
+        highlights:
+            - >
+                Design and implementation of auto-scaling and highly available infrastructure
+                to host high profile Python application
+            - Support ongoing operations
+            - Ensure FISMA compliance of hosting environment
+            - Support continuous integration and deployment pipeline
+
+    -   name: County Health Rankings and Roadmaps
+        role: Infrastructure Design, Application Support
+        website: http://www.countyhealthrankings.org/
+        date: 2008 - Present
+        summary: Multi-technology application presenting impactful and highly publicized public health data
+        highlights:
+          - Multiple iterations of infrastructure, from single and multi-instance, to auto-scaling AWS platform to handle yearly spikes
+          - MapBox / TileMill stack for map production
+          - AngularJS single page application
+          - PHP (Laravel) API backend
+          - Drupal frontend
+          - Multiple layers of caching for each app component, including edge CDN, Memcached, and Database layers
+          - Support continuous integration and deployment
+
+    -   name: EPA
+        role: Infrastructure Consultant
+        website: https://www.epa.gov/
+        date: 2014 - Present
+        summary: Provide expert guidance on infrastructure development and ongoing improvements to support large-scale Drupal application
+        highlights:
+            - MySQL database replication support, optimization, tuning
+            - Caching strategies with CDN to improve application performance
+            - Incident log and metric analysis to determine causes of and remedies to performance issues
+
+    -   name: Center for Strategic and International Studies
+        role: Infrastructure Design, Administration
+        website: https://www.csis.org/
+        date: 2010 - Present
+        summary: Drupal Application hosting for client with large volumes of high profile content and media
+        highlights:
+            - >
+                Design and implementation of auto-scaling and highly available infrastructure
+                to host Drupal application.
+            - Support growing patterns of international traffic
+            - Tiered caching strategy comprised of edge CDN, Memcached, and Database layers
+            - Support continuous integration and deployment
+
+education:
+    -   location: Intro to Python and Django
+        date: 2018
+        summary: >
+          Training on development with Python and Django framework to further
+          understanding for infrastructure support
+
+    -   location: SaltStack Certified Engineer
+        date: 2014
+        summary: Certification 0x0414F5F9
+    -   location: Red Hat Certified Engineer, RHEL5
+        date: 2008
+        summary: Certification 805008376234889
+    -   location: George Mason University, Fairfax, VA
+        date: 2002 - 2003
+
+interests:
+    - 'Guitar: Bluegrass, Jazz, Rock, Funk!'
+    - Open Source technology, philosophy
+    - Personal Finance / Investing
+    - Photography
+    - Hiking / Travel
+
+config:
+    theme: compact
+    #    github_source: https://github.com/hanula/resume
+    pdf_file: Mike_Shade_Resume.pdf
