@@ -41,7 +41,7 @@ pipeline{
         stage('Build Docker Image'){
             steps{
         
-                 sh 'docker-compose build --build-arg RESUME=ade.yaml'
+                 sh 'docker-compose build --build-arg RESUME=ade.yaml '
                  
                 //  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
                  sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx-resume:latest'

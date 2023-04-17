@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: minyx-resume:40
-        image: zeemlinux/minyx:40
+        image: zeemlinux/minyx-resume:40
         resources:
           limits:
             memory: "128Mi"
