@@ -41,10 +41,10 @@ pipeline{
         stage('Build Docker Image'){
             steps{
         
-                 sh 'docker-compose build --build-arg RESUME=ade.yaml --no-cache'
+                 sh 'docker-compose build --build-arg RESUME=ade.yaml'
                  
                 //  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
-                 sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx:latest'
+                 sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx-resume:latest'
                 //  sh 'docker rmi minyx-resume_resume:latest'
                 //  sh 'docker images -a | grep "none" | awk '{print $3}' | xargs docker rmi'
                 }
@@ -53,7 +53,7 @@ pipeline{
             steps{
                 script{
                     docker.withRegistry('',REGISTRY_CREDS){
-                      sh 'docker push zeemlinux/minyx:latest' 
+                      sh 'docker push zeemlinux/minyx-resume:latest' 
                     }
                 }
             }
