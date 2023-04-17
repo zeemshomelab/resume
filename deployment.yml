@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minyx-resume:43
+  name: minyx-resume
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
-      app: minyx-resume:43
+      app: minyx-resume
   template:
     metadata:
       labels:
-        app: minyx-resume:43
+        app: minyx-resume
     spec:
     
       containers:
@@ -22,4 +22,4 @@ spec:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 5000
+        - containerPort: 80
