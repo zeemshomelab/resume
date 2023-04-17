@@ -77,6 +77,24 @@ pipeline{
                 }
             }
         }
+        stage(' Push the Changed Deployment File Git '){
+            steps{
+                script{
+                    sh """
+                     git config --global user.name "zeemshomelab"
+                     git config --global user.email zeems.homelab@gmail.com
+                     git add deployment.yml
+                     git commit -m "updated deployment.yml file"
+                    """
+                    withCredentials([gitUsernamePassword(credentialsId: 'githubtoken', gitToolName: 'Default')]) {
+
+                     sh "git pushhttps://github.com/zeemshomelab/resume.git minyx"
+
+                   }
+                   
+                }
+            }
+       }
             
     }
 }
