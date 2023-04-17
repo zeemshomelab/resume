@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minyx-resume
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: minyx-resume
+  template:
+    metadata:
+      labels:
+        app: minyx-resume
+    spec:
+      containers:
+      - name: minyx-resume
+        image: zeemlinux/minyx-resume:0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
