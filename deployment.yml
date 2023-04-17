@@ -12,12 +12,22 @@ spec:
       labels:
         app: minyx-resume:43
     spec:
+    terminationGracePeriodSeconds: "30"
       containers:
-      - name: minyx-resume:43
-        image: zeemlinux/minyx-resume:43
+      - name: minyx-resume
+        image: zeemlinux/minyx-resume
+         imagePullPolicy: "Always"
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
         - containerPort: 5000
+
+
+  # spec:
+  # terminationGracePeriodSeconds: 30
+  # containers:
+  # - name: my_container
+  #   image: my_image:latest
+  #   imagePullPolicy: "Always"
