@@ -88,7 +88,7 @@ pipeline{
                     """
                     withCredentials([gitUsernamePassword(credentialsId: 'githubtoken', gitToolName: 'Default')]) {
 
-                     sh "git pushhttps://github.com/zeemshomelab/resume.git minyx"
+                     sh "git push https://github.com/zeemshomelab/resume.git minyx"
 
                    }
                    
