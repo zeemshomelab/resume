@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minyx-resume
+  name: minyx-resume:40
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: minyx-resume
+      app: minyx-resume:40
   template:
     metadata:
       labels:
-        app: minyx-resume
+        app: minyx-resume:40
     spec:
       containers:
-      - name: minyx-resume
-        image: zeemlinux/minyx-resume:0
+      - name: minyx-resume:40
+        image: zeemlinux/minyx-resume:40
         resources:
           limits:
             memory: "128Mi"
