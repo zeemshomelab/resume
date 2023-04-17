@@ -41,7 +41,7 @@ pipeline{
         stage('Build Docker Image'){
             steps{
         
-                 sh 'docker-compose build --build-arg RESUME=ade.yaml'
+                 sh 'docker-compose build --build-arg RESUME=ade.yaml --no-cache'
                  
                 //  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
                  sh 'docker tag minyx-resume_resume:latest zeemlinux/minyx:latest'
@@ -61,8 +61,7 @@ pipeline{
         stage('Delete Docker Images'){
             steps{
                 script{
-                    sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG}"
-                    sh "docker rmi ${IMAGE_NAME}:latest"
+                    sh 'docker rmi minyx-resume_resume:latest'
                 }
             }
         }
