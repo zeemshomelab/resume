@@ -201,6 +201,6 @@ interests:
     - Hiking / Travel
 
 config:
-    theme: compact
+    theme: modern
     #    github_source: https://github.com/hanula/resume
     pdf_file: Iyabo_Rafiu_Resume.pdf
