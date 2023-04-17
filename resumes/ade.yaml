@@ -79,7 +79,7 @@ work:
           - Containerize existing and automate creation of new projects
           - Help our developers work smarter, faster, and more effectively
           - Manage our customer facing web infrastructure from edge to edge to provide content to Fools all over the world
-    -   company: Sdora LLc
+    -   company: Sdora LLC
         role: Sr. System Administrator
         website: https://forumone.com
         date: April 2011 - June 2018
@@ -95,9 +95,10 @@ work:
           - Provide solution guidance to business development team
           - Client-facing support, consulting, and incident response
           - Manage internal IT staff, provide career development mentorship, and technical guidance
-    -   company: Zeeminah Global Ent
+
+    -   company: zeeminah global ent
         role: System Administrator
-        date: April 2011 - April 2019
+        date: April 2007 - April 2011
         highlights:
           - Supported cloud and dedicated infrastructure for hosting of Drupal / Wordpress / PHP sites
           - Participated in on-call rotation
@@ -105,7 +106,7 @@ work:
           - Vendor management
           - Managed internal IT operations
 
-    -   company: Omniplex World Services Corporation
+    -   company: fortunato services
         role: Technical Support Specialist
         date: March 2006 - April 2007
         website: http://www.omniplex.com/
@@ -156,6 +157,18 @@ projects:
             - Caching strategies with CDN to improve application performance
             - Incident log and metric analysis to determine causes of and remedies to performance issues
 
+    -   name: Center for Strategic and International Studies
+        role: Infrastructure Design, Administration
+        website: https://www.csis.org/
+        date: 2010 - Present
+        summary: Drupal Application hosting for client with large volumes of high profile content and media
+        highlights:
+            - >
+                Design and implementation of auto-scaling and highly available infrastructure
+                to host Drupal application.
+            - Support growing patterns of international traffic
+            - Tiered caching strategy comprised of edge CDN, Memcached, and Database layers
+            - Support continuous integration and deployment
 
 education:
     -   location: Intro to Python and Django
@@ -181,8 +194,6 @@ interests:
     - Hiking / Travel
 
 config:
-    theme: modern
+    theme: simple
     #    github_source: https://github.com/hanula/resume
-    pdf_file: Mike_Shade_Resume.pdf
-
-
+    pdf_file: Iyabo_Rafiu_Resume.pdf
