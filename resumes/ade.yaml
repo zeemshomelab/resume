@@ -96,15 +96,22 @@ work:
           - Client-facing support, consulting, and incident response
           - Manage internal IT staff, provide career development mentorship, and technical guidance
 
-    -   company: zeeminah global ent
-        role: System Administrator
-        date: April 2007 - April 2011
+    -   company: zeeminah  LLC
+        role: Sr. System Administrator
+        website: https://forumone.com
+        date: April 2011 - June 2018
+        summary: A full-service web design and technology consulting firm
         highlights:
-          - Supported cloud and dedicated infrastructure for hosting of Drupal / Wordpress / PHP sites
-          - Participated in on-call rotation
-          - Managed dedicated and cloud servers
-          - Vendor management
-          - Managed internal IT operations
+          - >
+              Design highly available, scalable infrastructure for PHP / Python / Django / Node / Docker-based applications
+              on AWS
+          - Decrease time required to manage, deploy, and maintain infrastructure with CloudFormation, SaltStack, and Puppet
+          - Develop and support workflow with Docker and Vagrant for continuous delivery pipeline via Jenkins
+          - Participate in agile Scrum development methodology
+          - Advise clients on infrastructure management, planning, and scaling
+          - Provide solution guidance to business development team
+          - Client-facing support, consulting, and incident response
+          - Manage internal IT staff, provide career development mentorship, and technical guidance
 
     -   company: fortunato services
         role: Technical Support Specialist
@@ -194,6 +201,6 @@ interests:
     - Hiking / Travel
 
 config:
-    theme: simple
+    theme: compact
     #    github_source: https://github.com/hanula/resume
     pdf_file: Iyabo_Rafiu_Resume.pdf
