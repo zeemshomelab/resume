@@ -194,6 +194,6 @@ interests:
     - Hiking / Travel
 
 config:
-    theme: compact
+    theme: modern
     #    github_source: https://github.com/hanula/resume
     pdf_file: Mike_Shade_Resume.pdf
