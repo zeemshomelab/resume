@@ -69,15 +69,15 @@ skills:
         - LAN / WAN Networking / VPC
         - Firewalls / iptables / Security Groups
 
-    - area: Application / Software
-        skills:
-        Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
-        Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
-        Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
-        Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
-        Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
-        EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
-        Scaling, Load balancer, Datadog, Azure DevOps.
+    # - area: Applications 
+        highlights:
+        - Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
+        - Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
+        - Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
+        - Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
+        - Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
+        - EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
+        - Scaling, Load balancer, Datadog, Azure DevOps.
 
 
 
