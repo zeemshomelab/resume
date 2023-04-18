@@ -4,7 +4,7 @@ profile:
     name: Iyabo Rafiu
     label: DevOps/DevSecOps Engineer/Linux Sys. Admin - Remote
     email: iarafiu01@gmail.com
-        phone: 571-327-8964
+    phone: 571-327-8964
     address: Nottingham MD
     summary: >
        A DevOps Engineer/Solution Architect aspiring for a bright and challenging career in Information system & technology. I have 
@@ -69,7 +69,7 @@ skills:
         - LAN / WAN Networking / VPC
         - Firewalls / iptables / Security Groups
 
-    -area: Application/Software
+    - area: Application / Software
         skills:
         Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
         Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
