@@ -13,7 +13,7 @@ profile:
        worked as a DevOps engineer for the most part of my IT career with a focus on using automation and log aggregation tools to 
        support CI/CD pipelines and application deployments.
 
-    image: "https://avatars0.githubusercontent.com/u/393545?v=2&s=460"
+    #image: "https://avatars0.githubusercontent.com/u/393545?v=2&s=460"
     website: https://arafiu.zeemshomelab.com
 
     networks:
@@ -69,22 +69,22 @@ skills:
         - LAN / WAN Networking / VPC
         - Firewalls / iptables / Security Groups
 
-    #  - area: Applications 
-    #     highlights:
-    #     - Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
-    #     - Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
-    #     - Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
-    #     - Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
-    #     - Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
-    #     - EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
-    #     - Scaling, Load balancer, Datadog, Azure DevOps.
+    - area: 
+        applications:
+        - Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
+        - Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
+        - Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
+        - Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
+        - Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
+        - EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
+        - Scaling, Load balancer, Datadog, Azure DevOps.
 
 
 
 work:
     -   company: Select Data llc
         role: Devops Engineer
-        website: https://theselectdata.com
+      #  website: https://theselectdata.com
         date: June 2019 - Present
         summary: Helping make the world smarter, happier, and richer
         highlights:
@@ -108,7 +108,7 @@ work:
 
     -   company: Sdora llc
         role: Sr. System Administrator
-        website: https://sdora.org
+       # website: https://sdora.org
         date: April 2015 - June 2019
         summary: A full-service web design and technology consulting firm
         highlights:
@@ -152,7 +152,7 @@ work:
 
     -   company: Bridged unplugged
         role: Help Desk Support
-        website: https://sdora.org
+       # website: https://sdora.org
         date: September 2009 - January 2011
         highlights:
           - Field incoming help requests from end users via both telephone and e-mail in a courteous manner.
@@ -175,57 +175,57 @@ work:
           - Develop help sheets and frequently asked questions lists for end users.
 
 
-projects:
+# projects:
 
-    -   name: Peace Corps
-        role: Infrastructure Design, Administration
-        website: https://www.peacecorps.gov/
-        date: 2016 - Present
-        summary: Django / Wagtail CMS application hosting
-        highlights:
-            - >
-                Design and implementation of auto-scaling and highly available infrastructure
-                to host high profile Python application
-            - Support ongoing operations
-            - Ensure FISMA compliance of hosting environment
-            - Support continuous integration and deployment pipeline
+#     -   name: Peace Corps
+#         role: Infrastructure Design, Administration
+#        # website: https://www.peacecorps.gov/
+#         date: 2016 - Present
+#         summary: Django / Wagtail CMS application hosting
+#         highlights:
+#             - >
+#                 Design and implementation of auto-scaling and highly available infrastructure
+#                 to host high profile Python application
+#             - Support ongoing operations
+#             - Ensure FISMA compliance of hosting environment
+#             - Support continuous integration and deployment pipeline
 
-    -   name: County Health Rankings and Roadmaps
-        role: Infrastructure Design, Application Support
-        website: http://www.countyhealthrankings.org/
-        date: 2008 - Present
-        summary: Multi-technology application presenting impactful and highly publicized public health data
-        highlights:
-          - Multiple iterations of infrastructure, from single and multi-instance, to auto-scaling AWS platform to handle yearly spikes
-          - MapBox / TileMill stack for map production
-          - AngularJS single page application
-          - PHP (Laravel) API backend
-          - Drupal frontend
-          - Multiple layers of caching for each app component, including edge CDN, Memcached, and Database layers
-          - Support continuous integration and deployment
+#     -   name: County Health Rankings and Roadmaps
+#         role: Infrastructure Design, Application Support
+#         website: http://www.countyhealthrankings.org/
+#         date: 2008 - Present
+#         summary: Multi-technology application presenting impactful and highly publicized public health data
+#         highlights:
+#           - Multiple iterations of infrastructure, from single and multi-instance, to auto-scaling AWS platform to handle yearly spikes
+#           - MapBox / TileMill stack for map production
+#           - AngularJS single page application
+#           - PHP (Laravel) API backend
+#           - Drupal frontend
+#           - Multiple layers of caching for each app component, including edge CDN, Memcached, and Database layers
+#           - Support continuous integration and deployment
 
-    -   name: EPA
-        role: Infrastructure Consultant
-        website: https://www.epa.gov/
-        date: 2014 - Present
-        summary: Provide expert guidance on infrastructure development and ongoing improvements to support large-scale Drupal application
-        highlights:
-            - MySQL database replication support, optimization, tuning
-            - Caching strategies with CDN to improve application performance
-            - Incident log and metric analysis to determine causes of and remedies to performance issues
+#     -   name: EPA
+#         role: Infrastructure Consultant
+#         website: https://www.epa.gov/
+#         date: 2014 - Present
+#         summary: Provide expert guidance on infrastructure development and ongoing improvements to support large-scale Drupal application
+#         highlights:
+#             - MySQL database replication support, optimization, tuning
+#             - Caching strategies with CDN to improve application performance
+#             - Incident log and metric analysis to determine causes of and remedies to performance issues
 
-    -   name: Center for Strategic and International Studies
-        role: Infrastructure Design, Administration
-        website: https://www.csis.org/
-        date: 2010 - Present
-        summary: Drupal Application hosting for client with large volumes of high profile content and media
-        highlights:
-            - >
-                Design and implementation of auto-scaling and highly available infrastructure
-                to host Drupal application.
-            - Support growing patterns of international traffic
-            - Tiered caching strategy comprised of edge CDN, Memcached, and Database layers
-            - Support continuous integration and deployment
+#     -   name: Center for Strategic and International Studies
+#         role: Infrastructure Design, Administration
+#         website: https://www.csis.org/
+#         date: 2010 - Present
+#         summary: Drupal Application hosting for client with large volumes of high profile content and media
+#         highlights:
+#             - >
+#                 Design and implementation of auto-scaling and highly available infrastructure
+#                 to host Drupal application.
+#             - Support growing patterns of international traffic
+#             - Tiered caching strategy comprised of edge CDN, Memcached, and Database layers
+#             - Support continuous integration and deployment
 
 education:
     -   location: university of Lagos, Nigeria
