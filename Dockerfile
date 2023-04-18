@@ -7,8 +7,8 @@ RUN apt-get update && \
 
 COPY . /app
 WORKDIR /app
-RUN pip3 install --no-cache-dir -r requirements.txt && \
-    make
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN make
 
 FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
