@@ -69,22 +69,22 @@ skills:
         - LAN / WAN Networking / VPC
         - Firewalls / iptables / Security Groups
 
-    - area: 
-        applications:
-        - Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
-        - Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
-        - Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
-        - Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
-        - Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
-        - EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
-        - Scaling, Load balancer, Datadog, Azure DevOps.
+    # - area: Foundational
+    #     skills:
+    #     - Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
+    #     - Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
+    #     - Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
+    #     - Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
+    #     - Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
+    #     - EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
+    #     - Scaling, Load balancer, Datadog, Azure DevOps
 
 
 
 work:
     -   company: Select Data llc
         role: Devops Engineer
-      #  website: https://theselectdata.com
+        website: https://theselectdata.com
         date: June 2019 - Present
         summary: Helping make the world smarter, happier, and richer
         highlights:
@@ -108,7 +108,7 @@ work:
 
     -   company: Sdora llc
         role: Sr. System Administrator
-       # website: https://sdora.org
+        website: https://sdora.org
         date: April 2015 - June 2019
         summary: A full-service web design and technology consulting firm
         highlights:
@@ -133,6 +133,7 @@ work:
 
     -   company: Bislow Auto Tag & Insurance Services
         role: Customer service
+        website: https://bislowinsureservices.com
         date: March 2011 - March 2015
         highlights:
           - Update databases or records with new information as it becomes available
@@ -152,7 +153,7 @@ work:
 
     -   company: Bridged unplugged
         role: Help Desk Support
-       # website: https://sdora.org
+        website: https://bridgedunplugged.com
         date: September 2009 - January 2011
         highlights:
           - Field incoming help requests from end users via both telephone and e-mail in a courteous manner.
