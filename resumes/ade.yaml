@@ -1,18 +1,20 @@
-profile:
-    name: Adetoro Rafiu
-    label: DevOps Engineer
-    email: iarafiu01@gmail.com
-    #    phone: 571.327.8964
-    address: Nottingham, MD
-    summary: >
-        I am a DevOps engineer with a passion for automation,
-        reliability, and solving complex problems simply. I love to glue things together to
-        make everyone's job easier. I take pride in communicating effectively to audiences of all types,
-        distilling complex ideas down to their essence. I bring more than 10 years of experience designing
-        infrastructure and successfully supporting many kinds of production workloads and technologies.
+# Example resume
 
-    # image: "https://avatars0.githubusercontent.com/u/393545?v=2&s=460"
-    website: https://arafiu.zeemshomelab.com/
+profile:
+    name: Iyabo Rafiu
+    label: DevOps/DevSecOps Engineer/Linux Sys. Admin - Remote
+    email: iarafiu01@gmail.com
+        phone: 571-327-8964
+    address: Nottingham MD
+    summary: >
+       A DevOps Engineer/Solution Architect aspiring for a bright and challenging career in Information system & technology. I have 
+       over 7 years’ vast experience in large-scale enterprise IT, specifically in Linux engineering, DevOps Engineering and 
+       infrastructure management with a proven ability to create and deliver solutions that result in growth of the company. I have 
+       worked as a DevOps engineer for the most part of my IT career with a focus on using automation and log aggregation tools to 
+       support CI/CD pipelines and application deployments.
+
+    image: "https://avatars0.githubusercontent.com/u/393545?v=2&s=460"
+    website: https://arafiu.zeemshomelab.com
 
     networks:
         -   provider: github
@@ -20,8 +22,8 @@ profile:
             url: https://github.com/zeeminah
 
         -   provider: linkedin
-            username:
-            url: https://www.linkedin.com/in/
+            username: aminat2
+            url: https://www.linkedin.com/in/aminat2
 
 skills:
     - area: Platforms
@@ -31,7 +33,7 @@ skills:
         - CICD, automation
         - Linux of all breeds
         - Vagrant / KVM / VMWare
-        - AWS / GCP / Rackspace Cloud
+        - AWS / Azure / GCP / Rackspace Cloud
     - area: Orchestration / Management
       skills:
         - SaltStack / Puppet
@@ -67,63 +69,111 @@ skills:
         - LAN / WAN Networking / VPC
         - Firewalls / iptables / Security Groups
 
+    -area: Application/Software
+        skills:
+        Jenkins, Gitlab, Nexus, Artifactory, Ansibke, Docker, Apache web server, Tomcat, Websphere,
+        Sonarcube, Nagios, OMD, Prometheus, Grafana, Samba, FTP, Minio, NFS, TCP/IP, LVM, Git, DNS, and DHCP.
+        Confluence, JIRA, Bitbucket, Kickstart, New Relic, Terraform, Bamboo, SMTP, load balancer, MySQL, Ngnix, SSL, SiteScope, 
+        Harbor registry, Tableau, VMware, ESXi, SSH, Twistlock, Pod Configurations, Gitlab CI, GitHub, Bamboo, Sentry, Postgres, 
+        Sendmail, Cron, SSH, FTP, Namspaces, DHCP, CloudFront, Squid Proxy, ECR, LDAP, Bind DNS, Zabbix, Splunk, FileZilla, AWS, 
+        EC2, S3, RDS, ECS, Open Stack Servers, OpenStack Environment, Lambda, Route 53, Cloud Front, CloudWatch, IAM, VPC, Auto 
+        Scaling, Load balancer, Datadog, Azure DevOps.
+
+
+
 work:
-    -   company: Select Data LLC
+    -   company: Select Data llc
         role: Devops Engineer
-        website: https://fools.com
-        date: June 2018 - Present
+        website: https://theselectdata.com
+        date: June 2019 - Present
         summary: Helping make the world smarter, happier, and richer
         highlights:
-          - Develop and support CI/CD processes for deployment of Python and .NET Core Apps
-          - Manage, develop, and support Kubernetes / Docker / Linux / .NET hosting infrastructure
+          - Detailed technical knowledge and hands-on experience in DevOps, Automation, Build Engineering and Configuration Management
+          - Work on DevOps processes and tools supporting agile application development teams leading to continuous integration, test, and deploy methods.
           - Containerize existing and automate creation of new projects
           - Help our developers work smarter, faster, and more effectively
           - Manage our customer facing web infrastructure from edge to edge to provide content to Fools all over the world
-    -   company: Sdora LLC
+          - Recommend standards and best practices including automation, process efficiencies, and enhanced security for supported areas
+          - Working knowledge of Azure DevOps or equivalent
+          - Ability to configure and use twistlock to scan docker images for vulnerabilities 
+          - Create DevOps process automation and tooling to implement standards and boundaries in a way that empowers our application development teams to help themselves for their infrastructure and deployment needs.
+          - Working experience with Ansible playbooks for virtual and physical instance provisioning, configuration management, patching and software deployment.
+          - Plan and coordinate system utilization, and performs growth analysis and capacity planning
+          - Coordinates the upgrade of environments for large scale efforts and serves as group contact for major projects and initiatives.
+          - Develop a DevSecOps culture by providing knowledge of solutions and expertise within multiple Cloud technologies to the development teams
+          - Maintain and improve existing azure infrastructure environment
+          - Develop test automation frameworks in collaboration with rest of the team 
+          - Ability to use configuration management tool such as Terraform and Ansible.
+          - Configuring and implementation of the various kinds of security scans such as DAST/SAST/SCA/HVA
+
+    -   company: Sdora llc
         role: Sr. System Administrator
-        website: https://forumone.com
-        date: April 2011 - June 2018
+        website: https://sdora.org
+        date: April 2015 - June 2019
         summary: A full-service web design and technology consulting firm
         highlights:
-          - >
-              Design highly available, scalable infrastructure for PHP / Python / Django / Node / Docker-based applications
-              on AWS
-          - Decrease time required to manage, deploy, and maintain infrastructure with CloudFormation, SaltStack, and Puppet
-          - Develop and support workflow with Docker and Vagrant for continuous delivery pipeline via Jenkins
-          - Participate in agile Scrum development methodology
-          - Advise clients on infrastructure management, planning, and scaling
-          - Provide solution guidance to business development team
-          - Client-facing support, consulting, and incident response
-          - Manage internal IT staff, provide career development mentorship, and technical guidance
+          - Implementing and developing solutions enabling Development and Operations teams to build, deploy, monitor and test applications and environments.
+          - Performed bash shell scripting to automate tasks 
+          - Experience with Microsoft Azure cloud computing platform.
+          - Help tune performance and ensure high availability of infrastructure 
+          - Ability to integrate Jenkins with other tools or application servers
+          - Ability to be able to implement a Continuous pipeline with Docker, Jenkins and GitHub.
+          - Managed infrastructure with Ansible.
+          - Creating automated build and deployment process for application, re-engineering setup for better user experience, and leading up to building a continuous integration system for all our products.
+          - Ability to configure and use twistlock to scan docker images for vulnerabilities 
+          - Defining Security policy for Linux Servers, including Apache, Tomcat and Jboss etc. Creating VMware Lab setup as per Internal QA team's requirement using VMware ESXi servers.
+          - Support and troubleshooting of Linux Apache, MySQL, Have knowledge on MySQL, Oracle Database Administration.
+          - Managed systems routine backup, scheduling jobs, enabling system logging and network logging of servers for maintenance.
+          - Experience with Linux servers in virtualized environments Installed and configured GIT to implement branching strategy which is suitable for agile development also provided continuous support and maintenance of software builds.
+          - Maintaining appropriate file and system security, monitoring and controlling system access, changing permission, ownership of files and directories, maintaining passwords, assigning special privileges to selected users and controlling file access, monitoring status of process to increase system efficiency, scheduling system related cronjobs.
+          - Expertise in creating Jenkins jobs and Jenkins’s pipeline to drive all Microservices builds out to the Docker registry and then to deploy applications to Kubernetes Cluster.
+          - Experience in Building and deploying the application code using CLI of Kubernetes called kubectl, kubelet, kubeadm, and Schedule the jobs using Kube scheduler. 
+          - Experience in designing and deploying container-based production clusters using Docker, Kubernetes, Docker file.
+          - Experience on Ansible and Ansible Tower dashboard, role-based access control, access to Ansible for deployments and worked with Ansible Playbooks to automate various deployment tasks and working knowledge on Ansible Roles, Ansible inventory files and Ansible Galaxy.
 
-    -   company: zeeminah  LLC
-        role: Sr. System Administrator
-        website: https://forumone.com
-        date: April 2011 - June 2018
-        summary: A full-service web design and technology consulting firm
+    -   company: Bislow Auto Tag & Insurance Services
+        role: Customer service
+        date: March 2011 - March 2015
         highlights:
-          - >
-              Design highly available, scalable infrastructure for PHP / Python / Django / Node / Docker-based applications
-              on AWS
-          - Decrease time required to manage, deploy, and maintain infrastructure with CloudFormation, SaltStack, and Puppet
-          - Develop and support workflow with Docker and Vagrant for continuous delivery pipeline via Jenkins
-          - Participate in agile Scrum development methodology
-          - Advise clients on infrastructure management, planning, and scaling
-          - Provide solution guidance to business development team
-          - Client-facing support, consulting, and incident response
-          - Manage internal IT staff, provide career development mentorship, and technical guidance
+          - Update databases or records with new information as it becomes available
+          - Correct and modify inaccurate files and records
+          - Enter data into appropriate fields; databases, records, and files
+          - Transfer data from written records, interviews, and paper formats via computer, recorders, or scanners
+          - Handle numerical data accurately
+          - Create and organizing spreadsheets with large numbers
+          - Curate data directly from speech, including interviews
+          - Update database or records with new information as it becomes available
+          - Comply with security backups and regular checks to ensure data is saved and stored properly
+          - Summarizing and compiling data for standardized reports
+          - View and verifying confidential or private customer/client information;
+          - protect the information and identities of customers/client
+          - Verifying data by correctly checking and comparing source documentation
+          - Organizing paper formats, paper backups, and material source files as needed.
 
-    -   company: fortunato services
-        role: Technical Support Specialist
-        date: March 2006 - April 2007
-        website: http://www.omniplex.com/
-        summary: >
-            Provider of investigative services to public and private sector
-            agencies nationwide
+    -   company: Bridged unplugged
+        role: Help Desk Support
+        website: https://sdora.org
+        date: September 2009 - January 2011
         highlights:
-            - Supported secure operations of country-wide fleet of IT systems
-            - Help Desk support
-            - IT lifecycle support and management
+          - Field incoming help requests from end users via both telephone and e-mail in a courteous manner.
+          - Document all pertinent end user identification information, including name, department, contact information, and nature of problem or issue.
+          - Build rapport and elicit problem details from help desk customers.
+          - Prioritize and schedule problems. Escalate problems (when required) to the appropriately
+            experienced technician.
+          - Record, track, and document the help desk request problem-solving process, including all
+          - successful and unsuccessful decisions made, and actions taken, through to final resolution.
+          - Apply diagnostic utilities to aid in troubleshooting.
+          - Access software updates, drivers, knowledge bases, and frequently asked questions resources
+            the Internet to aid in problem resolution.
+          - Identify and learn appropriate software and hardware used and supported by the organization.
+          - Perform hands-on fixes at the desktop level, including installing and upgrading software, installing
+            hardware, implementing file backups, and configuring systems and applications.
+          - Performing preventative maintenance, including checking and cleaning of workstations, printers,
+            and peripherals.
+          - Test fixes to ensure problem has been adequately resolved.
+          - Perform post-resolution follow-ups to help requests.
+          - Develop help sheets and frequently asked questions lists for end users.
+
 
 projects:
 
@@ -178,29 +228,30 @@ projects:
             - Support continuous integration and deployment
 
 education:
-    -   location: Intro to Python and Django
-        date: 2018
-        summary: >
-          Training on development with Python and Django framework to further
-          understanding for infrastructure support
+    -   location: university of Lagos, Nigeria
+        date: 2010
+        summary: Bachelor's Degree in Science
+        
+    -   location: Bethel Comuter College
+        date: 2007
+        summary: Desktop Publishing
 
-    -   location: SaltStack Certified Engineer
-        date: 2014
-        summary: Certification 0x0414F5F9
-    -   location: Red Hat Certified Engineer, RHEL5
-        date: 2008
-        summary: Certification 805008376234889
-    -   location: George Mason University, Fairfax, VA
-        date: 2002 - 2003
+certification:
+    -   CompTIA Linux+
+    -   Microsoft Azure Administrator Certificate
+    -   AWS Certified Solutions Architect Associate
+    -   Splunk eLearning Fundamentals certificate
+
 
 interests:
-    - 'Guitar: Bluegrass, Jazz, Rock, Funk!'
-    - Open Source technology, philosophy
+    - Country music, Blues
+    - Open Source technology
     - Personal Finance / Investing
-    - Photography
-    - Hiking / Travel
+    - Photography, Cooking, Handcraft/Decoration
+    - Travel, Walking
 
 config:
+    analytics: G-QYW6G3G434
     theme: modern
     #    github_source: https://github.com/hanula/resume
-    pdf_file: Iyabo_Rafiu_Resume.pdf
+    pdf_file: rafiu_iyabo_Resume.pdf
